@@ -1,0 +1,327 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>setup.cycrow.cheat</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description>Description</description>
+	<arguments />
+	<sourcetext>
+		<line linenr="001" indent="">
+			<text>load</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>7432</var>
+		</line>
+		<line linenr="002" indent="">
+			<var>$Page.ID</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>9999</var>
+		</line>
+		<line linenr="003" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'cycrow.cheat.pageid'</text>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$Page.ID</var>
+		</line>
+		<line linenr="004" indent="" />
+		<line linenr="005" indent="">
+			<comment>* add ship custom command: id=1400</comment>
+		</line>
+		<line linenr="006" indent="">
+			<comment>* set script command upgrade: command=[COMMAND_CYCROW_SHIPCHEAT]  upgrade=[TRUE]  script='z.cheat.cycrow.cmdchk'</comment>
+		</line>
+		<line linenr="007" indent="">
+			<comment>* global script map: set: key=[COMMAND_CYCROW_SHIPCHEAT], class=[Ship], race=null, script='z.cheat.cycrow.cmd', prio=0</comment>
+		</line>
+		<line linenr="008" indent="">
+			<comment>* set script command upgrade: command=[COMMAND_AUCTION_STATION]  upgrade=[TRUE]</comment>
+		</line>
+		<line linenr="009" indent="">
+			<comment>* global script map: set: key=[COMMAND_AUCTION_STATION], class=[Station], race=null, script='z.cheat.cycrow.cmd', prio=0</comment>
+		</line>
+		<line linenr="010" indent="" />
+		<line linenr="011" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'cycrow.cheat.hotkey'</text>
+		</line>
+		<line linenr="012" indent="&#160;">
+			<var>$text</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>read</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>$Page.ID</var>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>901</var>
+		</line>
+		<line linenr="013" indent="&#160;">
+			<var>$id</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<var>$text</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>z.cheat.cycrow.hotkey</call>
+		</line>
+		<line linenr="014" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'cycrow.cheat.hotkey'</text>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$id</var>
+		</line>
+		<line linenr="015" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="016" indent="">
+			<comment>* $id = get global variable: name='cheat.hotkey.destruct'</comment>
+		</line>
+		<line linenr="017" indent="">
+			<comment>* if $id</comment>
+		</line>
+		<line linenr="018" indent="">
+			<comment>* unregister hotkey $id</comment>
+		</line>
+		<line linenr="019" indent="">
+			<comment>* set global variable: name='cheat.hotkey.destruct' value=null</comment>
+		</line>
+		<line linenr="020" indent="">
+			<comment>* end</comment>
+		</line>
+		<line linenr="021" indent="" />
+		<line linenr="022" indent="">
+			<comment>* = [THIS]-&gt; call script 'z.cheat.cycrow.hotkey.add' : id='destruct' text=801 script='z.cheat.cycrow.destruct' onoff=[TRUE]</comment>
+		</line>
+		<line linenr="023" indent="">
+			<comment>* = [THIS]-&gt; call script 'z.cheat.cycrow.hotkey.add' : id='reload' text=802 script='z.cheat.cycrow.hotkey.reload' onoff=[FALSE]</comment>
+		</line>
+		<line linenr="024" indent="">
+			<comment>* = [THIS]-&gt; call script 'z.cheat.cycrow.hotkey.add' : id='accel' text=803 script='z.cheat.cycrow.hotkey.accel' onoff=[FALSE]</comment>
+		</line>
+		<line linenr="025" indent="">
+			<comment>* = [THIS]-&gt; call script 'z.cheat.cycrow.hotkey.add' : id='brake' text=804 script='z.cheat.cycrow.hotkey.brake' onoff=[FALSE]</comment>
+		</line>
+		<line linenr="026" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="setup.cycrow.cheat" />
+			<sval type="int" val="50" />
+			<sval type="string" val="Description" />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="array" size="3">
+				<sval type="string" val="Page.ID" />
+				<sval type="string" val="text" />
+				<sval type="string" val="id" />
+			</sval>
+			<sval type="array" size="8">
+				<sval type="array" size="3">
+					<sval type="int" val="151" />
+					<sval type="int" val="4" />
+					<sval type="int" val="7432" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9999" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="5" />
+					<sval type="string" val="cycrow.cheat.pageid" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="cycrow.cheat.hotkey" />
+					<sval type="int" val="-536869116" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="126" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="901" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="string" val="z.cheat.cycrow.hotkey" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="5" />
+					<sval type="string" val="cycrow.cheat.hotkey" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+			<sval type="array" size="18">
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="string" val="add ship custom command: id=1400" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="string" val="set script command upgrade: command=[COMMAND_CYCROW_SHIPCHEAT]  upgrade=[TRUE]  script='z.cheat.cycrow.cmdchk'" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="string" val="global script map: set: key=[COMMAND_CYCROW_SHIPCHEAT], class=[Ship], race=null, script='z.cheat.cycrow.cmd', prio=0" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="string" val="set script command upgrade: command=[COMMAND_AUCTION_STATION]  upgrade=[TRUE]" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="string" val="global script map: set: key=[COMMAND_AUCTION_STATION], class=[Station], race=null, script='z.cheat.cycrow.cmd', prio=0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="7" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="7" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$id = get global variable: name='cheat.hotkey.destruct'" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="7" />
+					<sval type="int" val="1" />
+					<sval type="string" val="if $id" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="7" />
+					<sval type="int" val="1" />
+					<sval type="string" val="unregister hotkey $id" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="7" />
+					<sval type="int" val="1" />
+					<sval type="string" val="set global variable: name='cheat.hotkey.destruct' value=null" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="7" />
+					<sval type="int" val="1" />
+					<sval type="string" val="end" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="7" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="7" />
+					<sval type="int" val="1" />
+					<sval type="string" val="= [THIS]-&gt; call script 'z.cheat.cycrow.hotkey.add' : id='destruct' text=801 script='z.cheat.cycrow.destruct' onoff=[TRUE]" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="7" />
+					<sval type="int" val="1" />
+					<sval type="string" val="= [THIS]-&gt; call script 'z.cheat.cycrow.hotkey.add' : id='reload' text=802 script='z.cheat.cycrow.hotkey.reload' onoff=[FALSE]" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="7" />
+					<sval type="int" val="1" />
+					<sval type="string" val="= [THIS]-&gt; call script 'z.cheat.cycrow.hotkey.add' : id='accel' text=803 script='z.cheat.cycrow.hotkey.accel' onoff=[FALSE]" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="7" />
+					<sval type="int" val="1" />
+					<sval type="string" val="= [THIS]-&gt; call script 'z.cheat.cycrow.hotkey.add' : id='brake' text=804 script='z.cheat.cycrow.hotkey.brake' onoff=[FALSE]" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

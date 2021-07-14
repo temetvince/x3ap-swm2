@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml-stylesheet href="director.xsl" type="text/xsl" ?>
+<director name="test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="director.xsd">
+  <documentation>
+    <author name="CBJ" alias="CBJ" contact="CBJ"/>
+    <content reference="start" name="start" description="Initial actions for different gamestarts"/>
+    <version number="1.2" date="09/07/08" status="testing"/>
+    <!-- BW: Add Humble Trader, Bankrupt Assassin -->
+  </documentation>
+  <cues>
+    <cue name="start">
+      <documentation>
+        <content name="start" reference="Startup" type="L3"/>
+        <version number="1.2" date="04/01/08" status="release"/>
+        <history>
+          <change date="14/10/11" author="Owen Lake" description="Added initial X3AP gamestarts"/>
+          <!--X3AP-->
+          <change date="11/03/10" author="enenra" description="Changed some more ATF notorieties to the correct ones... should be correct now."/>
+          <change date="16/02/10" author="enenra" description="Changed ATF rank in 106, 111 and 113 to noton1."/>
+          <change date="11/08/08" author="al_main" description="Fixed engine tunings in Poisoned Paranid and added 4 FDs"/>
+          <change date="09/07/08" author="al_main" description="Fixed and added the start unlocks"/>
+          <change date="12/05/08" author="al_main" description="Relations added to teladi start, ATF corrected to 0%"/>
+          <change date="09/05/08" author="Owen Lake" description="Added player age check"/>
+          <change date="07/05/08" author="al_main" description="Initial version of X3TC starts"/>
+          <change date="18/04/08" author="CBJ" description="Example version of X3R starts"/>
+        </history>
+      </documentation>
+      <action>
+        <do_choose>
+          <do_when value="{player.age}" min="20">
+            <!--Behaviour when resetting the MD-->
+            <set_value name="start.temp" exact="1"/>
+          </do_when>
+          <do_otherwise>
+            <do_choose>
+              <do_when value="{player.gamestart}" exact="106" comment="Damyath Import">
+                <set_value name="PlayerRace" exact="{lookup.race@terran}"/>
+              </do_when>
+            </do_choose>
+          </do_otherwise>
+        </do_choose>
+      </action>
+      <cues>
+        
+        <!--Gamestart Unlocks-->
+
+      </cues>
+    </cue>
+  </cues>
+  <signature>uUwX7HxatodiXcIIz9WqZQ8lTvnVOAeKJFgBdNqH5CVPlSTAcyLUwtPvzhpGXWO46QZS3ner2rdn1WCW1CgFZrPeX2RpEKXG5POvkJqy+USVumw5lFDRihSH6QzhsS/MjB5NXkfKpY1qK10iOBBzgdKoWWV7pz6ciXVaqs/xGCGR5YcS5oixe/KmEX60TzX7wLHJsSm6k+5/VHfD9oaVQPTxSgwTD3KzgOFL8AafwUMkcIRPO2Jgi/nRoRw1aqGXawSN9ADa74jtSnRYL+i03Ql/dE8k6h2SftDAxngCsi0vivl6twNHoYO8wuYuNyhqHMGMfHqUt/yovMPzJrlBRQ==</signature>
+</director>

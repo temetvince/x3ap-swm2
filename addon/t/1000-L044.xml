@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language id="44">
+
+    <page id="9979" title="AutoRotate" descr="Options to keep ships upright relative to the gate network" voice="no">
+        <t id="1">1</t> <!-- Should autorotate apply to playership. Must enter/re-enter a sector to take effect. 0 for false or 1 for true. Default: 1 -->
+    </page>
+
+    <page id="17" title="Flag Ship Names" descr="The flagship names of each faction. Only applies to new games." voice="no">
+        <t id="883921">Rebel Chancellor</t>             <!-- Rebel Alliance -->
+        <t id="883922">New Republic High Command</t>    <!-- New Republic -->
+        <t id="883923">Republic High Command</t>        <!-- Republic -->
+        <t id="883924">Mandalore</t>                    <!-- Mandalorian -->
+        <t id="883925">Head of State</t>                <!-- CIS -->
+        <t id="883926">Emperor</t>                      <!-- Empire -->
+        <t id="883927">Supreme Commander</t>            <!-- Remnant -->
+    </page>
+
+    <page id="9972" title="Difficulty - Only applies to new games.">
+        <t id="0">0</t> <!-- Base threat level. New games use this as a starting point for difficulty and then modify it based on the scenario. (default: 0) -->
+    </page>
+
+    <page id="9972" title="Global Constants - Only change if you know what you are doing! Only applies to new games.">
+		<t id="1">200</t> <!-- Research update cycle, in seconds (default: 200) -->
+		<t id="2">5</t> <!-- Sanctuary & NPC Shipyards building update cycle, in seconds (default: 5) -->
+		<t id="3">30</t> <!-- Station resources cost divider (default: 30) -->
+		<t id="4">12</t> <!-- Ship resources cost divider (default: 6) -->
+		<t id="5">100</t> <!-- Station time cost divider, for the player (default: 100) -->
+		<t id="6">500</t> <!-- Ship time cost divider, for the player (default: 150) -->
+		<t id="7">10</t> <!-- Ships repair factor ; the higher the cheaper (default: 3) -->
+		<t id="8">600</t> <!-- Food consumption/Growth cycle, in seconds (default: 600) -->
+		<t id="9">1</t> <!-- Consumption rate multiplier per each people at each cycle (default: 1) -->
+		<t id="10">15000</t> <!-- Ship research cost divider (default: 10000) -->
+		<t id="13">100</t> <!-- Milliseconds between each scan step (default: 100) -->
+		<t id="14">6</t> <!-- Minimum shipyards that can be built (depends on player threat). Also the maximum shipyards for Pirates and Xenons. (default: 6) -->
+		<t id="15">325</t> <!-- Ship time cost divider, for NPCs (default: 325) -->
+		<t id="16">14400</t> <!-- Minimum invasion delay, in seconds ; beware, attackers are called back to base before an invasion. Also repopulates corporation fleets (default: 14400) -->
+		<t id="17">30</t> <!-- Minimum time between the construction of two NPC ships, in seconds (default: 30) -->
+		<t id="18">36000</t> <!-- Minimum time between the OCV waves, in seconds (default: 72000 (that's 20 hours)) -->
+		<t id="181">72000</t> <!-- Maximum time between the OCV waves, in seconds. Don't exceed minTime * 3 (216000 by default). (default: 79200 (that's 22 hours)) -->
+		<t id="29">4</t> <!-- % Chances of getting allied with another race at each alliance cycle (default: 4) -->
+		<t id="30">600</t> <!-- Alliance cycle, in seconds (default: 600) -->
+		<t id="31">28800</t> <!-- Alliance min duration, in seconds (default: 28800) -->
+		<t id="32">86400</t> <!-- Alliance max duration, in seconds (default: 86400) -->
+		<t id="33">18000</t> <!-- Maximum time in seconds a ship will spend on a defend sector mission if there's no enemy ; 0 is deactivated (default: 18000) -->
+		<t id="34">900</t> <!-- Equilibrium cycle, in seconds. Equilibrium is the auto-increase of warscore for either attacker or defender if they have no big ships in the targeted sector (default: 900) -->
+		<t id="35">200</t> <!-- Equilibrium value for attackers, in warscore points (default: 200) -->
+		<t id="36">100</t> <!-- Equilibrium value for defenders, in warscore points (default: 100) -->
+		<t id="37">400</t> <!-- Minimum total strength newly built ships must have to be sent on the current mission of their shipyard (default: 400) -->
+		<t id="38">1</t> <!-- Food display after Sanctuaries names, 0 to deactivate. Also affect Research station info display. (default: 1) -->
+		<t id="39">2</t> <!-- Recycle factor ; bound to ship/laser/missile/shield resources cost divider (default: 2) -->
+		<t id="41">10</t> <!-- Mayhem scanner maximum shield, in percent (default: 7) -->
+		<t id="48">200</t> <!-- Minimum fighters per Battle Group carriers (default: 10) -->
+		<t id="481">200</t> <!-- Maximum fighters per Battle Group carriers (default: 20) -->
+		<t id="49">120</t> <!-- Breakthrough research amount (default: 60) -->
+		<t id="51">5</t> <!-- Company wares salvagers; per company! (default: 4) -->
+		<t id="52">3</t> <!-- Company ships salvagers; per company! (default: 2) -->
+		<t id="53">100</t> <!-- Company missions credits reward % (default: 100) -->
+		<t id="54">10</t> <!-- Company missions reputation reward % (default: 100) -->
+		<t id="55">10</t> <!-- Ships repair factor - ADS version ; the higher the cheaper (default: 3) -->
+		<t id="56">24</t> <!-- Missile resources cost divider (default: 6) -->
+		<t id="57">12</t> <!-- Shield resources cost divider (default: 6) -->
+		<t id="58">12</t> <!-- Weapon resources cost divider (default: 6) -->
+		<t id="59">300</t> <!-- Missile time cost divider (default: 150) -->
+		<t id="60">300</t> <!-- Shield time cost divider (default: 150) -->
+		<t id="61">300</t> <!-- Weapon time cost divider (default: 150) -->
+		<t id="62">0</t> <!-- Boost Extension sold in Sanctuaries. Boolean. (default: 0) -->
+		<t id="63">66</t> <!-- How many sectors you need to conquer to dominate. (default: 66) -->
+		<t id="64">4</t> <!-- OWP limit per sector. (default: 4) -->
+		<t id="66">86400</t> <!-- How often the threat level is increased by 1 point. (default: 86400) -->
+		<t id="67">6</t> <!-- Dock agent limit, per each type. (default: 6) -->
+		<t id="68">8</t> <!-- Minimum number of miners NOT to exceed in one sector to avoid Rogue Mining Droid invasions. See 111 for maximum. (default: 4) -->
+		<t id="69">3600</t> <!-- Time between two Rogue Mining Droid invasions. (default: 10800) -->
+		<t id="70">8</t> <!-- Maximum perks per Sanctuary. (default: 4) -->
+		<t id="71">50000</t> <!-- Total project size needed to increase ship specialization by 1%. (default: 50000) -->		
+		<t id="72">50000</t> <!-- Total project size needed to increase laser specialization by 1%. (default: 50000) -->		
+		<t id="73">25000</t> <!-- Total project size needed to increase missile specialization by 1%. (default: 25000) -->		
+		<t id="74">10000</t> <!-- Total project size needed to increase shield specialization by 1%. (default: 10000) -->
+		<t id="75">12</t> <!-- Maintenance factor, in permille. (default: 8) -->
+		<t id="76">5</t> <!-- Natural population growth per food cycle (id=8). (default: 5) -->
+		<t id="77">1800</t> <!-- Invasion money cycle, in seconds. The invasion money is based on sector values * 1000 (default: 1800) -->
+		<t id="78">35</t> <!-- Invasion cost for the Rebel Alliance, in million credits. (default: 35) -->
+		<t id="79">50</t> <!-- Invasion cost for the New Republic, in million credits. (default: 50) -->
+		<t id="80">40</t> <!-- Invasion cost for the CIS, in million credits. (default: 40) -->
+		<t id="81">30</t> <!-- Invasion cost for the Mandalorians, in million credits. (default: 30) -->
+		<t id="82">45</t> <!-- Invasion cost for the Republic, in million credits. (default: 45) -->
+		<t id="83">160</t> <!-- Invasion cost for the Galactic Empire, in million credits. (default: 160) -->
+		<t id="84">60</t> <!-- Invasion cost for the Imperial Remnant, in million credits. (default: 60) -->
+		<t id="85">7</t> <!-- Invasion cost for the Old Republic, in million credits. (default: 15) -->
+		<t id="86">12</t> <!-- Maximum shipyards that can be built (depends on player threat). (default: 12) -->
+		<t id="87">500000</t> <!-- TS kill cost. How much credits the nearest shipyard lose when you kill a TS. (default: 500000) -->
+		<t id="88">10000000</t> <!-- Diplomacy cost: sign a truce. (default: 10000000) -->
+		<t id="89">10000000</t> <!-- Diplomacy cost: break a truce. (default: 10000000) -->
+		<t id="90">5000000</t> <!-- Diplomacy cost: shipyards information. (default: 5000000) -->
+		<t id="91">20000000</t> <!-- Diplomacy cost: disengage. (default: 20000000) -->
+		<t id="92">1000000</t> <!-- Diplomacy cost: reveal map. (default: 1000000) -->
+		<t id="93">100000000</t> <!-- Diplomacy cost: subjugate. (default: 100000000) -->
+		<t id="931">2000000</t> <!-- Diplomacy cost: data market. (default: 2000000) -->
+		<t id="94">6</t> <!-- Reputation rank requirement for all diplomatic actions. (default: 6) -->
+		<t id="95">0</t> <!-- NPC shipyard cost, in credits. (default: 0) -->
+		<t id="96">26</t> <!-- Number of OCV stations in the universe. New game required if modified. (default: 26) -->
+		<t id="97">3000000</t> <!-- TL kill cost. How much credits the nearest shipyard lose when you kill a TL. (default: 3000000) -->
+		<t id="98">3</t> <!-- Tax multiplier. Also increase the Ascension reward multiplier. (default: 3) -->
+		<t id="100">25</t> <!-- Asteroids generator: max. asteroids per sector. (default: 20) -->
+		<t id="101">250</t> <!-- Asteroids generator: max. debris per sector. (default: 200) -->
+		<t id="102">0</t> <!-- No jumpdrive allowed for player. (default: 0) -->
+		<t id="103">1</t> <!-- Ability for the player to teleport into any of his ships at any time. Recommended if you deactivate jumpdrive. (default: 0) -->
+		<t id="105">0</t> <!-- OCV waves twice more frequent. Forced to 1 with the OCV Hunter gamestart. Cumulative with this gamestart. (default: 0) -->
+		<t id="106">0</t> <!-- Rogue Mining Droid strength doubled. (default: 0) -->
+		<t id="107">900</t> <!-- OBSOLETE Distress calls minimum delay. (default: 900) -->
+		<t id="108">5</t> <!-- Minimum local merchants per Trading stations. (default: 4) -->
+		<t id="109">9</t> <!-- Maximum local merchants per Trading stations. (default: 8) -->
+		<t id="110">1</t> <!-- Asteroids generation at gamestart. Changing that value will only affect new games. (default: 1) -->
+		<t id="111">16</t> <!-- Maximum number of miners NOT to exceed in one sector to avoid Rogue Mining Droid invasions. See 68 for minimum. (default: 12) -->
+		<t id="112">25000</t> <!-- OBSOLETE Docking tax. (default: 25000) -->
+		<t id="113">10</t> <!-- Insurance cost divider, applied to the ship full price. (default: 5) -->
+		<t id="115">500000</t> <!-- Marine credit cost. (default: 500000) -->
+		<t id="117">3</t> <!-- Scraps multiplier. (default: 2) -->	
+		<t id="118">0</t> <!-- Deactivate OCV. Forced to 1 with the Vagrant gamestart. (default: 0) -->	
+		<t id="119">0</t> <!-- Cheat: all ships you craft receive full lasers and shields. (default: 0) -->	
+		<t id="120">50</t> <!-- Marine improvements costs multiplier. (default: 100) -->
+		<t id="121">0</t> <!-- Chaotic expansion. Each faction can expand to sectors that are non-adjacent to their territory. (default: 0) -->
+		<t id="122">0</t> <!-- OBSOLETE Remove docking tax warning messages. (default: 0) -->
+		<t id="123">1</t> <!-- Dirty wars only. Pirates still keep their own system. Can lead to real chaos and very unbalanced economy. (default: 0) -->
+		<t id="124">0</t> <!-- No instant jump for Battle Group fleets. They will slowly go towards their objective without using their jumpdrive. Very unpredictable results. (default: 0) -->
+		<t id="125">1</t> <!-- Station Agents synchronization. (default: 1) -->
+		<t id="126">1</t> <!-- Nearest sectors are prioritized by invaded Shipyards. (default: 1) -->
+		<t id="127">2</t> <!-- Minimum non-vanilla unknown sectors at the beginning of a new game PER CLUSTER (see below). (default: 2) -->
+		<t id="128">3</t> <!-- Maximum non-vanilla unknown sectors at the beginning of a new game PER CLUSTER (see below). (default: 3) -->
+		<t id="129">20</t> <!-- Minimum non-vanilla unknown sector clusters. (default: 20) -->
+		<t id="130">20</t> <!-- Maximum non-vanilla unknown sector clusters. (default: 20) -->
+		<t id="131">10</t> <!-- Quality of manufacture cost multiplier. (default: 8) -->
+		<t id="132">0</t> <!-- Disable bailing. (default: 0) -->
+		<t id="133">50</t> <!-- Max. number of marines. (default: 50) -->
+		<t id="134">1</t> <!-- Threat at which the OCV can start invading your sectors. (default: 1) -->
+		<t id="135">2000</t> <!-- Maximum roll value of failure due to poor quality. Increase this value to lower chances of failure. (default: 2000) -->
+		<t id="136">21600</t> <!-- Delay between a random Xenon invasion. 0 to deactivate. Ships are created all at once. (default: 21600) -->
+		<t id="137">14400</t> <!-- Delay between a random Pirate invasion. 0 to deactivate. Ships are created all at once. (default: 14400) -->
+		<t id="138">0</t> <!-- Hide non critical information message from Dock Agents, such as "was unable to load/unload". 0 to show. (default: 0) -->
+		<t id="139">20</t> <!-- Solar Panel Perk Efficiency in percent (default: 100)-->
+        <t id='140'>7200</t> <!-- Station autopopulate delay, in seconds. Default : 7200. -->
+		<t id='141'>20</t> <!-- Chances (out of 1000) to loot each shield/laser/missile of the ships you or your ships destroy. Default : 20. -->
+		<t id='142'>1</t> <!-- Destroy and rebuild all corporations in random but appropriate owner faction sectors at gamestart. (default: 1)-->
+	</page>
+</language>
