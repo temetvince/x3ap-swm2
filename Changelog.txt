@@ -1,3 +1,22 @@
+Beta-14:
+Fix: Some race flagship names were set incorrectly.
+Change: Autorotate applied instantly to all ships when entering a new sector.
+Change: Improved escort behavior at the expense of performance.
+Change: Escort performance increased - now only applies to ships in sector with player.
+Change: Moved attack logic to a custom script.
+Change: Autorotate for personal ship disabled by default, setting to turn on is now found in 9979-L044.
+Change: Readme updated.
+
+Beta-13:
+Fix: Several marine equipment bugs and some typos. Thanks Fallout (EG)!
+
+Beta-12:
+Fix: Built Complexes kept vanilla names.
+Fix: Ship components were using vanilla names in the Sanctuary production menu.
+Fix: Some bugs in the escort command introduced in Beta-11.
+Change: Standard formation for AI followers from The Shield to Big Ship Escort.
+Change: Player "delta" formation changed to actually be "Big Ship Escort".
+
 Beta-11:
 Fix: Autorotate monitor forced to wait a bit when player jumps into new sector to protect against terminating prematurely.
 Change: Add option in 1000-L044.xml to disable destroying and rebuilding corporations on new game start.

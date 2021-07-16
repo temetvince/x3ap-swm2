@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <language id="44">
-
-    <page id="9979" title="AutoRotate" descr="Options to keep ships upright relative to the gate network" voice="no">
-        <t id="1">1</t> <!-- Should autorotate apply to playership. Must enter/re-enter a sector to take effect. 0 for false or 1 for true. Default: 1 -->
-    </page>
-
     <page id="17" title="Flag Ship Names" descr="The flagship names of each faction. Only applies to new games." voice="no">
         <t id="883921">Rebel Chancellor</t>             <!-- Rebel Alliance -->
         <t id="883922">New Republic High Command</t>    <!-- New Republic -->

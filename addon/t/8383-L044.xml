@@ -275,7 +275,7 @@
 		<t id="517">The ship will retrieve the selected jump beacon.{2022,9999}</t>
 
 		<t id="810">A ship capable of transporting other ships will move to the pickup station, load as many possible ships into its hangars, and transport them to the destination return station by moving to it, and offloading the ships.{2022,9999}</t>
-		<t id="812">With marines aboard a TL, M7, M1, or M2 class vessel, this command will enable the training of on-board marine's combat ability provided the ship is docked at a military outpost facility. Once the command starts, eligible marines will attend a class that takes roughly 5 hours. After this time, details of the training will be reported. The training can make use of either Disintegrator Rifles, Low-yield Sidearms, or Terran EMP Rifles in the cargo bay of the ship. The weapons, through heavy use, are often broken and discarded. The more variety between the three weapons, the faster the marines will train. Training can take place without the marine weapons, but at a much slower pace. The host military outpost requires payment for the use of its facilities; payment varies with the combat experience of the marine, which will automatically be withdrawn from the ship's account. Payment for highly skilled marines can reach up to 1 million credits per class.{2022,9999}</t>
+		<t id="812">With marines aboard a TL, M7, M1, or M2 class vessel, this command will enable the training of on-board marine's combat ability provided the ship is docked at a military outpost facility. Once the command starts, eligible marines will attend a class that takes roughly 5 hours. After this time, details of the training will be reported. The training can make use of either Disruptor Rifles, Low-yield Sidearms, or Imperial EMP Rifles in the cargo bay of the ship. The weapons, through heavy use, are often broken and discarded. The more variety between the three weapons, the faster the marines will train. Training can take place without the marine weapons, but at a much slower pace. The host military outpost requires payment for the use of its facilities; payment varies with the combat experience of the marine, which will automatically be withdrawn from the ship's account. Payment for highly skilled marines can reach up to 1 million credits per class.{2022,9999}</t>
 		<t id="813">All wares in the ship's cargo hold are dropped at the station. Wares that are installed onto the ship and resupply wares are not dropped.{2022,9999}</t>
 
 		<t id="811">This ship will uninstall all wares and unload them to the Sanctuary at which it is stationed. It has no effect on other stations.{2022,9999}</t>
@@ -507,7 +507,6 @@
 	</page>
 
 	<page id="121" title="Old Republic rank" descr="Jedi rank" voice="no">
-		<t id="95">Enemy of the Clan</t>
 		<t id="95">Arch Nemesis</t>
 		<t id="96">Nemesis</t>
 		<t id="97">Insurgent</t>

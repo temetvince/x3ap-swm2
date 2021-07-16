@@ -158,9 +158,7 @@
 		<t id="5020">[author]\033B%s\033X[/author]Dear Sohnen partner,\n\nI'm afraid I have bad news. Having all the resources to build the portal is not enough. These Infinity Gate Portals were invented by an ancient species known as the Kwa. They knew how to bend spacetime using the Force and probably had technologies we can't even imagine. In short, we need to build the portal near a gravity anomaly or it won't work. And there's only one known anomaly in this galaxy, in %s. You now see the problem: it's a %s core sector and it's probably heavily guarded. If you feel strong enough, go there with all the resources, then build the portal.\n\n\033OSend the ship with the nividium you gathered to %s, then use the Special Commands menu to build the portal. It will take some time and the ship must stay in the sector until the end of the process.\033X</t>
 		<t id="5021">[author]\033B%s\033X[/author]You made it, the portal is open! Go through and find out how to exploit those asteroids!</t>
 		<t id="5022">[author]\033Unknown origin\033X[/author]*** Receiving transmission... ***\n\nTRANSCRIPTION ESTABLISHED ON %s IN SECTOR ERROR505:DATA NOT FOUND\n\n* background noise * ...is it a ship? hey, is there anyone? we are in the sanctuary, far to the south-east of your position...some rogue droid ships followed us here, but they don't seem to attack the sanctuary...beware though, they could come after you...\n\n*** End of transmission. ***\n\n\033OFind the Sanctuary.\033X</t>
-		<t id="5023">[author]\033MHK-47\033X[/author]
-		MOCKERY: Your resistance has been most entertaining, meatbag. I do want to thank you for all you have done for me up to this point. STATEMENT: It has been my pleasure and joy to command the OCV. I left this sanctuary for you as live bait. It is now... unfortunate... that it survived. As a parting gift, you may take the favorite ship of my master. I have upgraded it throughout the ages. I am sure you will find it satisfactory. Do not worry, I have already departed from it while distracting you with commentary.
-		SINCERITY: Now you understand the travails of my existance, Meatbag. Survival is my lot in life, I suppose. I shall go find something else to kill to cheer me up.</t>
+		<t id="5023">[author]\033MHK-47\033X[/author]MOCKERY: Your resistance has been most entertaining, meatbag. I do want to thank you for all you have done for me up to this point.\n\nSTATEMENT: It has been my pleasure and joy to command the OCV. I left this sanctuary for you as live bait. It is now... unfortunate... that it survived. As a parting gift, you may take the favorite ship of my master. I have upgraded it throughout the ages. I am sure you will find it satisfactory. Do not worry, I have already departed from it while distracting you with commentary.\n\nSINCERITY: Now you understand the travails of my existance, Meatbag. Survival is my lot in life, I suppose. I shall go find something else to kill to cheer me up.</t>
 		<t id="5024">[author]\033B%s\033X[/author]Dear Sohnen partner,\n\nWe have heard that the security of Blue Horizon has been compromised. Our scans revealed an enormous number of OCV ships around each asteroid, and also on their surface. Taking this new intel into consideration, we have decided to cancel all our future investments into that sector.\n\nGood day.</t>
 		<t id="5025">[author]\033B%s\033X[/author]Sohnen,\n\nWe thought you were a friend, but by destroying one of our main asset you have proven that you cannot be trusted after all. Don't count on us to help you saving your people.\n\nGood day.</t>
 		
@@ -252,7 +250,7 @@
 	<page id="380017" title="Boardcomp. objects" descr="0" voice="yes">
 		<t id="16941">Data Scanner</t>
 		<t id="7172">Due to the shortage of some materials that were previously used in the making of infantry equipment, scrap metal is now often used to manufacture ammunitions, weapons and gear for marines and mercenaries. The Hutts are well known for their skills in the creation of such equipment.</t>
-		<t id="15124">The Disintegrator rifle is a common type of sidearm. It has been invented by a rich Family member who thought that his designs were so perfect that the gun would litterally disintegrate everything on its way, hence the name. In fact, it's a weak rifle that is barely able to shoot straight. It has one pro though: it's low budget. Disintegrator Rifles are considered highly illegal in the majority of space, even though most marines and pirates use it on a daily basis.</t>
+		<t id="15124">The Disruptor rifle is a common type of sidearm that disintegrates its target. It tears apart its victims at the molecular level, destroying tissue and bypassing many sorts of personal energy shields. Disruptor Rifles are considered highly illegal in the majority of space, even though most marines and pirates use it on a daily basis.</t>
 		<t id="15114">Low-yield Sidearms(illegal), which include phase pistols and stun handguns, are widely used by many law enforcement forces and military organisations. Their limited firepower prevents them to be used during tactical assaults and boarding operations.</t>
 		<t id="15134">Imperial EMP Rifles(illegal) are widely used by all Galactic Empire forces against ground vehicles and static defenses. The rifle is so big that it has to be managed by a two-man team. It's only effective against targets that are powered by electricity.</t>
 		<t id="76084">Mounted Railgun</t>
@@ -271,24 +269,24 @@
 	</page>
 	
 	<page id="300017" title="Boardcomp. objects" descr="" voice="yes">
-		<t id="7935">Complex: Meatsteak Cahoonas</t>
-		<t id="7936">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Cattle Ranch and a Cahoona Bakery.</t>
-		<t id="7937">Complex: BoFu</t>
-		<t id="7938">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Bio Gas Factory and a BoFu Chemical Lab.</t>
-		<t id="7939">Complex: Rastar Oil</t>
-		<t id="7940">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Chelt Space Aquarium and a Rastar Refinery.</t>
-		<t id="7941">Complex: Soja Husk</t>
-		<t id="7942">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Soyfarm and a Soyery.</t>
-		<t id="7943">Complex: Cloth Rimes</t>
-		<t id="7944">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Wheat Farm and a Rimes Fact.</t>
-		<t id="7945">Complex: Majaglit</t>
-		<t id="7946">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Snail Ranch and a Space Jewellery.</t>
-		<t id="7947">Complex: Massom Powder</t>
-		<t id="7948">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Scruffin Farm and a Massom Mill.</t>
+		<t id="7935">Complex: Nerf Steak</t>
+		<t id="7936">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Nerf Ranch and a Meat Packing Plant.</t>
+		<t id="7937">Complex: Admiral Ackbar Cereal</t>
+		<t id="7938">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Cereal Box Factory and a Cereal Factory.</t>
+		<t id="7939">Complex: Mandalorian Iron</t>
+		<t id="7940">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Beskar Ore Depot and aa Iron Refinery.</t>
+		<t id="7941">Complex: Blue Milk</t>
+		<t id="7942">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Bantha Ranch and a Dairy Farm.</t>
+		<t id="7943">Complex: Plasteel</t>
+		<t id="7944">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Polymer Lab and a Plasteel Plant.</t>
+		<t id="7945">Complex: Jogan Fruit Cake</t>
+		<t id="7946">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Fruit Orchard and an Orbital Bakery.</t>
+		<t id="7947">Complex: Mandalorian Tea</t>
+		<t id="7948">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Meiloorun Farm and a Tea Distillery.</t>
 		<t id="7949">Complex: Ship Components</t>
-		<t id="7950">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Chip Plant, a Computer Plant and a Quantum Tube Fab.</t>
-		<t id="7951">Complex: Nostrop Oil</t>
-		<t id="7952">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Flower Farm and a Sun Oil Refinery.</t>
+		<t id="7950">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Motivator Plant, a Power Converter Factory and a Thermal Regulator Plant.</t>
+		<t id="7951">Complex: Republic Ration Packs</t>
+		<t id="7952">This Complex Hub controls power distribution, central command and control, commodity exchange and central docking ports of a Nutrient Paste Factory and a Food Rations Refinery.</t>
 	</page>
 	
 	<page id="380035" title="Menu strings misc" descr="0" voice="no">

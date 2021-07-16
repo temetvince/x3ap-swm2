@@ -2,7 +2,7 @@
 <?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
 <!-- Generated using X-Studio -->
 <script>
-	<name>temetvince.SectorMonitor.AutoRotate</name>
+	<name>temetvince.SectorMonitor</name>
 	<version>1</version>
 	<engineversion>50</engineversion>
 	<description></description>
@@ -14,13 +14,13 @@
 			<comment>* ************************************************</comment>
 		</line>
 		<line linenr="002" indent="">
-			<comment>* SCRIPT NAME: temetvince.SectorMonitor.AutoRotate.xml</comment>
+			<comment>* SCRIPT NAME: temetvince.SectorMonitor.xml</comment>
 		</line>
 		<line linenr="003" indent="">
-			<comment>* DESCRIPTION: Monitors the sector &amp; calls auto rotate for new ships.</comment>
+			<comment>* DESCRIPTION: Monitors the sector &amp; calls auto rotate for new ships,</comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>*                         Also removes bugged Mammoths from the game.</comment>
+			<comment>*                        as well as improves escort behavior</comment>
 		</line>
 		<line linenr="005" indent="">
 			<comment>* </comment>
@@ -33,14 +33,21 @@
 		</line>
 		<line linenr="008" indent="" />
 		<line linenr="009" indent="">
-			<var>$task</var>
+			<var>$autoRotate.task</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>12934</var>
 		</line>
-		<line linenr="010" indent="" />
-		<line linenr="011" indent="">
+		<line linenr="010" indent="">
+			<var>$matchSpeed.task</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>12935</var>
+		</line>
+		<line linenr="011" indent="" />
+		<line linenr="012" indent="">
 			<text>load</text>
 			<text> </text>
 			<text>text</text>
@@ -48,10 +55,10 @@
 			<text> </text>
 			<text>id</text>
 			<text>=</text>
-			<var>1000</var>
+			<var>9979</var>
 		</line>
-		<line linenr="012" indent="" />
-		<line linenr="013" indent="">
+		<line linenr="013" indent="" />
+		<line linenr="014" indent="">
 			<var>$text</var>
 			<text> </text>
 			<text>=</text>
@@ -69,7 +76,7 @@
 			<text>=</text>
 			<var>1</var>
 		</line>
-		<line linenr="014" indent="">
+		<line linenr="015" indent="">
 			<var>$shouldPlayerShipAutoRotate</var>
 			<text> </text>
 			<text>=</text>
@@ -82,21 +89,21 @@
 			<text> </text>
 			<text>integer</text>
 		</line>
-		<line linenr="015" indent="" />
-		<line linenr="016" indent="">
+		<line linenr="016" indent="" />
+		<line linenr="017" indent="">
 			<var>$firstIteration</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="017" indent="" />
-		<line linenr="018" indent="">
+		<line linenr="018" indent="" />
+		<line linenr="019" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="019" indent="&#160;" interruptable="@">
+		<line linenr="020" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<text>wait</text>
@@ -105,8 +112,8 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="020" indent="&#160;" />
-		<line linenr="021" indent="&#160;">
+		<line linenr="021" indent="&#160;" />
+		<line linenr="022" indent="&#160;">
 			<var>$playerSector</var>
 			<text> </text>
 			<text>=</text>
@@ -118,8 +125,8 @@
 			<text> </text>
 			<text>sector</text>
 		</line>
-		<line linenr="022" indent="&#160;" />
-		<line linenr="023" indent="&#160;">
+		<line linenr="023" indent="&#160;" />
+		<line linenr="024" indent="&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -130,11 +137,11 @@
 			<text> </text>
 			<var>$sector</var>
 		</line>
-		<line linenr="024" indent="&#160;&#160;">
+		<line linenr="025" indent="&#160;&#160;">
 			<text>break</text>
 		</line>
-		<line linenr="025" indent="&#160;" />
-		<line linenr="026" indent="&#160;">
+		<line linenr="026" indent="&#160;" />
+		<line linenr="027" indent="&#160;">
 			<var>$allShips</var>
 			<text> </text>
 			<text>=</text>
@@ -156,8 +163,8 @@
 			<text>/</text>
 			<text>station</text>
 		</line>
-		<line linenr="027" indent="&#160;" />
-		<line linenr="028" indent="&#160;">
+		<line linenr="028" indent="&#160;" />
+		<line linenr="029" indent="&#160;">
 			<var>$XS.Iterator1</var>
 			<text> </text>
 			<text>=</text>
@@ -170,17 +177,17 @@
 			<text> </text>
 			<var>$allShips</var>
 		</line>
-		<line linenr="029" indent="&#160;&#160;">
+		<line linenr="030" indent="&#160;&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="030" indent="&#160;&#160;&#160;">
+		<line linenr="031" indent="&#160;&#160;&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="031" indent="&#160;&#160;">
+		<line linenr="032" indent="&#160;&#160;">
 			<var>$ship</var>
 			<text> </text>
 			<text>=</text>
@@ -190,14 +197,14 @@
 			<var>$XS.Iterator1</var>
 			<text>]</text>
 		</line>
-		<line linenr="032" indent="&#160;&#160;">
+		<line linenr="033" indent="&#160;&#160;">
 			<text>skip</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$firstIteration</var>
 		</line>
-		<line linenr="033" indent="&#160;&#160;&#160;" interruptable="@">
+		<line linenr="034" indent="&#160;&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<text>wait</text>
@@ -206,47 +213,15 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="034" indent="&#160;&#160;" />
-		<line linenr="035" indent="&#160;&#160;">
-			<text>do</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>$ship</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>is</text>
-			<text> </text>
-			<text>of</text>
-			<text> </text>
-			<text>type</text>
-			<text> </text>
-			<var>{Enemy Race Mammoth}</var>
+		<line linenr="035" indent="&#160;&#160;" />
+		<line linenr="036" indent="&#160;&#160;">
+			<comment>* do if $ship-&gt; is of type {Enemy Race Mammoth}</comment>
 		</line>
-		<line linenr="036" indent="&#160;&#160;&#160;">
-			<var>$ship</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>destroy</text>
-			<text> </text>
-			<text>object</text>
-			<text>:</text>
-			<text> </text>
-			<text>killer</text>
-			<text>=</text>
-			<var>null</var>
-			<text>,</text>
-			<text> </text>
-			<text>show</text>
-			<text> </text>
-			<text>no</text>
-			<text> </text>
-			<text>explosion</text>
-			<text>=</text>
-			<var>[TRUE]</var>
+		<line linenr="037" indent="&#160;&#160;&#160;">
+			<comment>* $ship-&gt; destroy object: killer=null, show no explosion=[TRUE]</comment>
 		</line>
-		<line linenr="037" indent="&#160;&#160;&#160;" />
-		<line linenr="038" indent="&#160;&#160;&#160;">
+		<line linenr="038" indent="&#160;&#160;&#160;" />
+		<line linenr="039" indent="&#160;&#160;&#160;">
 			<text>if</text>
 			<text> </text>
 			<var>$ship</var>
@@ -255,7 +230,7 @@
 			<text> </text>
 			<var>[PLAYERSHIP]</var>
 		</line>
-		<line linenr="039" indent="&#160;&#160;">
+		<line linenr="040" indent="&#160;&#160;">
 			<var>$terminate</var>
 			<text> </text>
 			<text>=</text>
@@ -263,7 +238,7 @@
 			<text>!</text>
 			<var>$shouldPlayerShipAutoRotate</var>
 		</line>
-		<line linenr="040" indent="&#160;&#160;">
+		<line linenr="041" indent="&#160;&#160;">
 			<var>$ship</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -271,7 +246,7 @@
 			<text> </text>
 			<text>task</text>
 			<text> </text>
-			<var>$task</var>
+			<var>$autoRotate.task</var>
 			<text> </text>
 			<text>with</text>
 			<text> </text>
@@ -283,7 +258,7 @@
 			<text> </text>
 			<text>priority</text>
 			<text> </text>
-			<var>151</var>
+			<var>153</var>
 			<text>:</text>
 			<text> </text>
 			<text>arg1</text>
@@ -306,22 +281,15 @@
 			<text>=</text>
 			<var>null</var>
 		</line>
-		<line linenr="041" indent="&#160;&#160;">
+		<line linenr="042" indent="&#160;&#160;">
 			<text>continue</text>
 		</line>
-		<line linenr="042" indent="&#160;&#160;">
+		<line linenr="043" indent="&#160;&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="043" indent="&#160;&#160;" />
-		<line linenr="044" indent="&#160;&#160;">
-			<comment>* do if $class == [M3] OR $class == [M4] OR $class == [M5]</comment>
-		</line>
-		<line linenr="045" indent="&#160;&#160;">
-			<comment>* continue</comment>
-		</line>
-		<line linenr="046" indent="&#160;&#160;" />
-		<line linenr="047" indent="&#160;&#160;&#160;">
-			<var>$isRunning</var>
+		<line linenr="044" indent="&#160;&#160;" />
+		<line linenr="045" indent="&#160;&#160;&#160;">
+			<var>$autoRotate.isRunning</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
@@ -342,18 +310,18 @@
 			<text> </text>
 			<text>task</text>
 			<text>=</text>
-			<var>$task</var>
+			<var>$autoRotate.task</var>
 		</line>
-		<line linenr="048" indent="&#160;" />
-		<line linenr="049" indent="&#160;">
+		<line linenr="046" indent="&#160;&#160;" />
+		<line linenr="047" indent="&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<text>!</text>
-			<var>$isRunning</var>
+			<var>$autoRotate.isRunning</var>
 		</line>
-		<line linenr="050" indent="&#160;">
+		<line linenr="048" indent="&#160;&#160;">
 			<var>$ship</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -361,7 +329,7 @@
 			<text> </text>
 			<text>task</text>
 			<text> </text>
-			<var>$task</var>
+			<var>$autoRotate.task</var>
 			<text> </text>
 			<text>with</text>
 			<text> </text>
@@ -373,7 +341,7 @@
 			<text> </text>
 			<text>priority</text>
 			<text> </text>
-			<var>151</var>
+			<var>153</var>
 			<text>:</text>
 			<text> </text>
 			<text>arg1</text>
@@ -396,18 +364,126 @@
 			<text>=</text>
 			<var>null</var>
 		</line>
-		<line linenr="051" indent="&#160;">
+		<line linenr="049" indent="&#160;&#160;" />
+		<line linenr="050" indent="&#160;&#160;">
+			<var>$ship.following</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[NULL]</var>
+		</line>
+		<line linenr="051" indent="&#160;&#160;&#160;">
+			<var>$ship.following</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$ship</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>target</text>
+		</line>
+		<line linenr="052" indent="&#160;&#160;&#160;" />
+		<line linenr="053" indent="&#160;&#160;&#160;">
+			<text>if</text>
+			<text> </text>
+			<var>$ship.following</var>
+		</line>
+		<line linenr="054" indent="&#160;&#160;&#160;&#160;">
+			<var>$matchSpeed.isRunning</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$ship</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>temetvince.Ship.MatchSpeed</call>
+			<text> </text>
+			<text>on</text>
+			<text> </text>
+			<text>stack</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>task</text>
+			<text>=</text>
+			<var>$matchSpeed.task</var>
+		</line>
+		<line linenr="055" indent="&#160;&#160;" />
+		<line linenr="056" indent="&#160;&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<text>!</text>
+			<var>$matchSpeed.isRunning</var>
+		</line>
+		<line linenr="057" indent="&#160;">
+			<var>$ship</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>begin</text>
+			<text> </text>
+			<text>task</text>
+			<text> </text>
+			<var>$matchSpeed.task</var>
+			<text> </text>
+			<text>with</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>temetvince.Ship.MatchSpeed</call>
+			<text> </text>
+			<text>and</text>
+			<text> </text>
+			<text>priority</text>
+			<text> </text>
+			<var>152</var>
+			<text>:</text>
+			<text> </text>
+			<text>arg1</text>
+			<text>=</text>
+			<var>$ship.following</var>
+			<text> </text>
+			<text>arg2</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>arg3</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>arg4</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>arg5</text>
+			<text>=</text>
+			<var>null</var>
+		</line>
+		<line linenr="058" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="052" indent="" />
-		<line linenr="053" indent="">
+		<line linenr="059" indent="&#160;" />
+		<line linenr="060" indent="&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="061" indent="" />
+		<line linenr="062" indent="">
 			<var>$firstIteration</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="054" indent="" interruptable="@">
+		<line linenr="063" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<text>wait</text>
@@ -416,27 +492,28 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="055" indent="">
+		<line linenr="064" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="056" indent="" />
-		<line linenr="057" indent="">
+		<line linenr="065" indent="" />
+		<line linenr="066" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="058" indent="" />
+		<line linenr="067" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
-			<sval type="string" val="temetvince.SectorMonitor.AutoRotate" />
+			<sval type="string" val="temetvince.SectorMonitor" />
 			<sval type="int" val="50" />
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="11">
+			<sval type="array" size="14">
 				<sval type="string" val="sector" />
-				<sval type="string" val="task" />
+				<sval type="string" val="autoRotate.task" />
+				<sval type="string" val="matchSpeed.task" />
 				<sval type="string" val="text" />
 				<sval type="string" val="shouldPlayerShipAutoRotate" />
 				<sval type="string" val="firstIteration" />
@@ -445,9 +522,11 @@
 				<sval type="string" val="ship" />
 				<sval type="string" val="XS.Iterator1" />
 				<sval type="string" val="terminate" />
-				<sval type="string" val="isRunning" />
+				<sval type="string" val="autoRotate.isRunning" />
+				<sval type="string" val="ship.following" />
+				<sval type="string" val="matchSpeed.isRunning" />
 			</sval>
-			<sval type="array" size="31">
+			<sval type="array" size="36">
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
 					<sval type="int" val="1" />
@@ -457,14 +536,23 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="2" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="12935" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="151" />
 					<sval type="int" val="4" />
-					<sval type="int" val="1000" />
+					<sval type="int" val="9979" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="126" />
-					<sval type="int" val="2" />
+					<sval type="int" val="3" />
 					<sval type="int" val="4" />
 					<sval type="int" val="9979" />
 					<sval type="int" val="4" />
@@ -472,13 +560,13 @@
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="1078" />
-					<sval type="int" val="3" />
+					<sval type="int" val="4" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="2" />
+					<sval type="int" val="3" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="4" />
+					<sval type="int" val="5" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="10" />
@@ -487,7 +575,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610605047" />
+					<sval type="int" val="-1610603767" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="10" />
@@ -504,14 +592,14 @@
 					<sval type="int" val="703" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="3" />
-					<sval type="int" val="5" />
+					<sval type="int" val="6" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610610168" />
+					<sval type="int" val="-1610609912" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="5" />
+					<sval type="int" val="6" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
 					<sval type="int" val="15" />
@@ -523,47 +611,47 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="30" />
+					<sval type="int" val="35" />
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="1008" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
-					<sval type="int" val="6" />
+					<sval type="int" val="7" />
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="131" />
-					<sval type="int" val="8" />
+					<sval type="int" val="9" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="6" />
+					<sval type="int" val="7" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610605815" />
+					<sval type="int" val="-1610604535" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="8" />
+					<sval type="int" val="9" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="143" />
-					<sval type="int" val="8" />
+					<sval type="int" val="9" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="129" />
+					<sval type="int" val="8" />
+					<sval type="int" val="131074" />
 					<sval type="int" val="7" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="6" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="8" />
+					<sval type="int" val="9" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-536866553" />
+					<sval type="int" val="-536866297" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="4" />
+					<sval type="int" val="5" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
@@ -573,29 +661,12 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="100" />
 				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="710" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="7" />
-					<sval type="int" val="-1610607864" />
-					<sval type="int" val="9" />
-					<sval type="int" val="458752" />
-				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="1341" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="7" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="10" />
-				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610606845" />
+					<sval type="int" val="-1610607101" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="7" />
+					<sval type="int" val="8" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="3" />
 					<sval type="int" val="15" />
@@ -607,10 +678,10 @@
 				</sval>
 				<sval type="array" size="10">
 					<sval type="int" val="104" />
-					<sval type="int" val="9" />
+					<sval type="int" val="10" />
 					<sval type="int" val="2" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="3" />
+					<sval type="int" val="4" />
 					<sval type="int" val="15" />
 					<sval type="int" val="65556" />
 					<sval type="int" val="2" />
@@ -620,14 +691,14 @@
 				<sval type="array" size="18">
 					<sval type="int" val="1017" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="7" />
+					<sval type="int" val="8" />
 					<sval type="string" val="temetvince.Ship.AutoRotate" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
 					<sval type="int" val="4" />
-					<sval type="int" val="151" />
+					<sval type="int" val="153" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="9" />
+					<sval type="int" val="10" />
 					<sval type="int" val="0" />
 					<sval type="int" val="0" />
 					<sval type="int" val="0" />
@@ -639,23 +710,23 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="12" />
+					<sval type="int" val="13" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="1072" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="7" />
-					<sval type="int" val="10" />
+					<sval type="int" val="8" />
+					<sval type="int" val="11" />
 					<sval type="string" val="temetvince.Ship.AutoRotate" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
 				</sval>
 				<sval type="array" size="10">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610606072" />
+					<sval type="int" val="-1610606328" />
 					<sval type="int" val="2" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="10" />
+					<sval type="int" val="11" />
 					<sval type="int" val="15" />
 					<sval type="int" val="65556" />
 					<sval type="int" val="2" />
@@ -665,12 +736,12 @@
 				<sval type="array" size="18">
 					<sval type="int" val="1017" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="7" />
+					<sval type="int" val="8" />
 					<sval type="string" val="temetvince.Ship.AutoRotate" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
 					<sval type="int" val="4" />
-					<sval type="int" val="151" />
+					<sval type="int" val="153" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="9" />
 					<sval type="int" val="0" />
@@ -682,13 +753,78 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="0" />
 				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="112" />
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="12" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="12" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="527" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
 					<sval type="int" val="12" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
+					<sval type="int" val="-1610604797" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="12" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1072" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+					<sval type="int" val="13" />
+					<sval type="string" val="temetvince.Ship.MatchSpeed" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610604792" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+					<sval type="int" val="15" />
+					<sval type="int" val="65556" />
+					<sval type="int" val="2" />
+					<sval type="int" val="65556" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="18">
+					<sval type="int" val="1017" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+					<sval type="string" val="temetvince.Ship.MatchSpeed" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
 					<sval type="int" val="4" />
+					<sval type="int" val="152" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="12" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="13" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="5" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="9" />
@@ -703,7 +839,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="5" />
+					<sval type="int" val="6" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
@@ -717,7 +853,7 @@
 					<sval type="string" val="The sector to monitor" />
 				</sval>
 			</sval>
-			<sval type="array" size="31">
+			<sval type="array" size="35">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -726,17 +862,17 @@
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="SCRIPT NAME: temetvince.SectorMonitor.AutoRotate.xml" />
+					<sval type="string" val="SCRIPT NAME: temetvince.SectorMonitor.xml" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="DESCRIPTION: Monitors the sector &amp; calls auto rotate for new ships." />
+					<sval type="string" val="DESCRIPTION: Monitors the sector &amp; calls auto rotate for new ships," />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="                        Also removes bugged Mammoths from the game." />
+					<sval type="string" val="                       as well as improves escort behavior" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
@@ -758,15 +894,11 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="1" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
 					<sval type="int" val="2" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="4" />
+					<sval type="int" val="3" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -774,7 +906,7 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="7" />
+					<sval type="int" val="6" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -782,73 +914,93 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="10" />
-					<sval type="int" val="7" />
+					<sval type="int" val="9" />
+					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="10" />
-					<sval type="int" val="2" />
+					<sval type="int" val="11" />
+					<sval type="int" val="7" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="11" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="17" />
+					<sval type="int" val="12" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="19" />
+					<sval type="int" val="18" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="18" />
+					<sval type="int" val="1" />
+					<sval type="string" val="do if $ship-&gt; is of type {Enemy Race Mammoth}" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="18" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$ship-&gt; destroy object: killer=null, show no explosion=[TRUE]" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="18" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="23" />
+					<sval type="int" val="22" />
 					<sval type="int" val="6" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="23" />
+					<sval type="int" val="22" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="23" />
+					<sval type="int" val="22" />
 					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="23" />
-					<sval type="int" val="1" />
-					<sval type="string" val="do if $class == [M3] OR $class == [M4] OR $class == [M5]" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="23" />
-					<sval type="int" val="1" />
-					<sval type="string" val="continue" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="23" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="24" />
+					<sval type="int" val="25" />
 					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="27" />
-					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="27" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="30" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="30" />
+					<sval type="int" val="29" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="31" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="31" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="32" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="32" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="35" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="35" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="36" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>

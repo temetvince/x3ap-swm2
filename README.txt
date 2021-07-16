@@ -32,7 +32,8 @@ It is !!HIGHLY!! recommended, but not required, that you install the Claim and T
 
 **********************************************************************
 
-Many settings can be changed in addon/t/1000-L044.xml, including whether the player ship autorotates.
+Many settings can be changed in addon/t/1000-L044.xml.
+Turn on the Autorotate feature for the player ship in addon/t/9979-L044.
 
 **********************************************************************
 
