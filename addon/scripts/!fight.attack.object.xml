@@ -507,19 +507,19 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>temetvince.Ship.Fight</call>
+			<call>!fight.attack.object.std</call>
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>argument1</text>
+			<text>victim</text>
 			<text>=</text>
 			<var>$victim</var>
 			<text> </text>
-			<text>argument2</text>
+			<text>follow</text>
 			<text>=</text>
 			<var>$follow</var>
 			<text> </text>
-			<text>argument3</text>
+			<text>shields</text>
 			<text>=</text>
 			<var>$onlyShields</var>
 		</line>
@@ -552,19 +552,19 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>temetvince.Ship.Fight</call>
+			<call>!fight.attack.object.std</call>
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>argument1</text>
+			<text>victim</text>
 			<text>=</text>
 			<var>$victim</var>
 			<text> </text>
-			<text>argument2</text>
+			<text>follow</text>
 			<text>=</text>
 			<var>$follow</var>
 			<text> </text>
-			<text>argument3</text>
+			<text>shields</text>
 			<text>=</text>
 			<var>$onlyShields</var>
 		</line>
@@ -961,7 +961,7 @@
 				</sval>
 				<sval type="array" size="12">
 					<sval type="int" val="102" />
-					<sval type="string" val="temetvince.Ship.Fight" />
+					<sval type="string" val="!fight.attack.object.std" />
 					<sval type="int" val="-2147483647" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
@@ -992,7 +992,7 @@
 				</sval>
 				<sval type="array" size="12">
 					<sval type="int" val="102" />
-					<sval type="string" val="temetvince.Ship.Fight" />
+					<sval type="string" val="!fight.attack.object.std" />
 					<sval type="int" val="-2147483647" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />

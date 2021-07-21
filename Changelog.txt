@@ -1,5 +1,6 @@
 Beta-14:
 Fix: Some race flagship names were set incorrectly.
+Change: Custom combat scripts reverted to vanilla.
 Change: Autorotate applied instantly to all ships when entering a new sector.
 Change: Improved escort behavior at the expense of performance.
 Change: Escort performance increased - now only applies to ships in sector with player.
