@@ -18,7 +18,7 @@ Star Wars for Mayhem 2, a mod for X3: Albion Prelude. Farnham's Legacy is not su
 1. Explore the galaxy you are thrust in either yourself or with explorer ships.
 2. Expand your empire using Sanctuaries, which are giant space stations, factories, and shipyards.
 3. Exploit the weaknesses of your enemies, holes in the economy, or the military advances of your allies.
-4. Exterminate factions which oppose you and the dreaded Omnicron Channel Virus.
+4. Exterminate factions which oppose you and the dreaded Omicron Channel Virus.
 
 Thanks to Litcube for releasing Litcube's Universe.
 Thanks to Joubarbe for all the Mayhem mods.

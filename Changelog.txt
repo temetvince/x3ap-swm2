@@ -1,3 +1,6 @@
+Beta-15:
+Fix: Omicron Channel Virus mispelling fixed in readme.
+
 Beta-14:
 Fix: Some race flagship names were set incorrectly.
 Change: Custom combat scripts reverted to vanilla.
