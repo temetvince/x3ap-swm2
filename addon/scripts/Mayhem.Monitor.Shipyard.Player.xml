@@ -4179,7 +4179,7 @@
 			<text> </text>
 			<text>==</text>
 			<text> </text>
-			<var>{Admiral Ackbar Cereal}</var>
+			<var>{Plasteel}</var>
 			<text> </text>
 			<text>OR</text>
 			<text> </text>
@@ -4187,7 +4187,7 @@
 			<text> </text>
 			<text>==</text>
 			<text> </text>
-			<var>{Blue Milk}</var>
+			<var>{Mandalorian Iron}</var>
 			<text> </text>
 			<text>OR</text>
 			<text> </text>
@@ -4195,7 +4195,7 @@
 			<text> </text>
 			<text>==</text>
 			<text> </text>
-			<var>{Imperial MRE}</var>
+			<var>{Jogan Fruit Cake}</var>
 		</line>
 		<line linenr="447" indent="&#160;&#160;&#160;&#160;&#160;">
 			<var>$foodPerPeople.mod</var>
@@ -4217,7 +4217,7 @@
 			<text> </text>
 			<text>==</text>
 			<text> </text>
-			<var>{Meiloorun Fruits}</var>
+			<var>{Mandalorian Tea}</var>
 		</line>
 		<line linenr="449" indent="&#160;&#160;&#160;&#160;">
 			<var>$foodPerPeople.mod</var>
@@ -4239,7 +4239,7 @@
 			<text> </text>
 			<text>==</text>
 			<text> </text>
-			<var>{Fried Porg Wings}</var>
+			<var>{Nerf Steak}</var>
 		</line>
 		<line linenr="451" indent="&#160;&#160;&#160;&#160;">
 			<var>$foodPerPeople.mod</var>
@@ -4919,9 +4919,12 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
 			<text>get</text>
 			<text> </text>
-			<text>global</text>
+			<text>local</text>
 			<text> </text>
 			<text>variable</text>
 			<text>:</text>
@@ -5029,9 +5032,12 @@
 			<text>'Resupply drone'</text>
 		</line>
 		<line linenr="536" indent="&#160;">
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
 			<text>set</text>
 			<text> </text>
-			<text>global</text>
+			<text>local</text>
 			<text> </text>
 			<text>variable</text>
 			<text>:</text>
@@ -6148,7 +6154,7 @@
 			<text> </text>
 			<text>(</text>
 			<text> </text>
-			<var>{Plasteel}</var>
+			<var>{Jogan Fruit}</var>
 			<text> </text>
 			<text>)</text>
 		</line>
@@ -6199,7 +6205,7 @@
 			<text> </text>
 			<text>(</text>
 			<text> </text>
-			<var>{Mandalorian Iron}</var>
+			<var>{Meiloorun Fruits}</var>
 			<text> </text>
 			<text>)</text>
 		</line>
@@ -6216,7 +6222,7 @@
 			<text> </text>
 			<text>(</text>
 			<text> </text>
-			<var>{Durasteel}</var>
+			<var>{Flavour Pack}</var>
 			<text> </text>
 			<text>)</text>
 		</line>
@@ -6318,7 +6324,7 @@
 			<text> </text>
 			<text>(</text>
 			<text> </text>
-			<var>{Nerf Steak}</var>
+			<var>{Bacta Canisters}</var>
 			<text> </text>
 			<text>)</text>
 		</line>
@@ -6335,7 +6341,7 @@
 			<text> </text>
 			<text>(</text>
 			<text> </text>
-			<var>{Admiral Ackbar Cereal}</var>
+			<var>{Plasteel}</var>
 			<text> </text>
 			<text>)</text>
 		</line>
@@ -6352,7 +6358,7 @@
 			<text> </text>
 			<text>(</text>
 			<text> </text>
-			<var>{Blue Milk}</var>
+			<var>{Mandalorian Iron}</var>
 			<text> </text>
 			<text>)</text>
 		</line>
@@ -6369,7 +6375,7 @@
 			<text> </text>
 			<text>(</text>
 			<text> </text>
-			<var>{Meiloorun Fruits}</var>
+			<var>{Mandalorian Tea}</var>
 			<text> </text>
 			<text>)</text>
 		</line>
@@ -6665,7 +6671,7 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>{Durasteel}</var>
+			<var>{Flavour Pack}</var>
 		</line>
 		<line linenr="706" indent="&#160;&#160;">
 			<var>$priceChecks</var>
@@ -8255,7 +8261,7 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>{Nerf Steak}</var>
+			<var>{Bacta Canisters}</var>
 		</line>
 		<line linenr="854" indent="&#160;">
 			<var>$priceChecks</var>
@@ -8359,7 +8365,7 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>{Admiral Ackbar Cereal}</var>
+			<var>{Plasteel}</var>
 		</line>
 		<line linenr="863" indent="&#160;">
 			<var>$priceChecks</var>
@@ -8463,7 +8469,7 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>{Blue Milk}</var>
+			<var>{Mandalorian Iron}</var>
 		</line>
 		<line linenr="872" indent="&#160;">
 			<var>$priceChecks</var>
@@ -14584,8 +14590,10 @@
 					<sval type="int" val="5" />
 					<sval type="string" val="Resupply drone" />
 				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="158" />
+				<sval type="array" size="6">
+					<sval type="int" val="156" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
 					<sval type="int" val="5" />
 					<sval type="string" val="mayhem_resupplyDrone" />
 					<sval type="int" val="91" />
@@ -14637,8 +14645,10 @@
 					<sval type="int" val="5" />
 					<sval type="string" val="Resupply drone" />
 				</sval>
-				<sval type="array" size="5">
-					<sval type="int" val="157" />
+				<sval type="array" size="7">
+					<sval type="int" val="155" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
 					<sval type="int" val="5" />
 					<sval type="string" val="mayhem_resupplyDrone" />
 					<sval type="int" val="131074" />

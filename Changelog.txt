@@ -1,3 +1,13 @@
+1.0.0:
+Fix: Fleets with fighters couldn't jump.
+Fix: Only 1 resupply drone was allowed for the player.
+Fix: Improved escort behavior when ship target speed is <=0m/s
+Change: Custom attack script was reverted to standard LU after after causing crashes
+Change: Improved escort behavior can now be turned off in '9979-L044.xml'
+Change: Added a Map Gates command
+Change: Added optional font
+Change: Updated Readme
+
 Beta-15:
 Fix: Omicron Channel Virus mispelling fixed in readme.
 
@@ -96,7 +106,7 @@ Change: Pulled changelog from README.txt into CHANGELOG-SWMayhem2
 Change: Readme now contains Discord and youtube links.
 Change: 8379-L044 to contain the correct sw mayhem 2 links.
 
-Beta:
+Beta-0:
 Top 20 changes from "vanilla" Mayhem 2:
 
 1.	All vanilla factions changed to star wars factions.
