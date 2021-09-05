@@ -41,7 +41,6 @@ It is !!HIGHLY!! recommended, but not required, that you install the Claim and T
 6. When asked, install all the shaders. Everything. All of them
 7. Copy the contents for SW Mayhem 2 from "x3 terran conflict" to your root Mayhem 2 install folder (probably named "x3 terran conflict"). It should ask you if you want to overwrite a bunch of files. Say yes!
 8. Rename the Mayhem 2 Graphics optional files you want to use to be the last cat/dat files. In other words, rename them to have the highest number of all the cat/dat files in the folder, one number higher than the current highest cat/dat file. I recommended using the dark milky way and particles no fog options. So for example, rename "OPTION - Dark Milky Way" cat and dat to "19.cat" and "19.dat" respectively, and then rename "OPTION - Particles No Fog" cat/dat to "20.cat" and "20.dat"
-9. Go to
 9. If you want to use the optional font, then go to your game's 'x3 terran conflict' folder. Rename the folder 'RenameMeTof' to 'f'. Notice the LicenseAndCopyright file for your information. The original author's work can be found here: https://github.com/belluzj/fantasque-sans
 10. Enjoy!
 
