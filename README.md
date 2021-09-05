@@ -30,6 +30,8 @@ Note: This mod does not include the SWLU soundtrack.
 4. Exterminate factions which oppose you and the dreaded Omnicron Channel Virus.
 
 ## Installation
+Installation video: https://www.youtube.com/watch?v=c68t3CS4E-A&t=37s
+
 It is !!HIGHLY!! recommended, but not required, that you install the Claim and Tug Command for Joubarbe's Satellite Monitoring by Wynarel: Forum.https://forum.egosoft.com/viewtopic.php?t=398916
 
 1. Install Mayhem 2. Follow ALL the instructions, including installing Litcube's Universe: (https://www.moddb.com/mods/mayhem/downloads/mayhem-main)
