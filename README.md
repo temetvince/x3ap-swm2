@@ -35,7 +35,7 @@ Installation video: https://www.youtube.com/watch?v=c68t3CS4E-A&t=37s
 It is !!HIGHLY!! recommended, but not required, that you install the Claim and Tug Command for Joubarbe's Satellite Monitoring by Wynarel: Forum.https://forum.egosoft.com/viewtopic.php?t=398916
 
 1. Install Mayhem 2. Follow ALL the instructions, including installing Litcube's Universe: (https://www.moddb.com/mods/mayhem/downloads/mayhem-main)
-* IMPORTANT: When installing Mayhem Graphics, do not rename any of the optional cat/dat files yet!
+    * IMPORTANT: When installing Mayhem Graphics, do not rename any of the optional cat/dat files yet!
 2. If you don't want to use Reshade and want to skip the Graphics Improvement mod functionality, skip to step 7
 3. Download and install ReShade: https://reshade.me/
 4. When asked for the game, browse and select X3AP.exe in your x3 install folder
@@ -67,10 +67,10 @@ It is !!HIGHLY!! recommended, but not required, that you install the Claim and T
 
 ## Top 20 Changes from Mayhem 2
 1.	All vanilla factions changed to star wars factions.
-* Kha'ak faction changed to Rogue Mining Droids.
-* Xenon faction changed to Sith.
-* Pirate faction changed to the Hutts.
-* Hutts and Sith are extremely dangerous. Race fleets can combat them more effectively if you raise your threat level.
+    * Kha'ak faction changed to Rogue Mining Droids.
+    * Xenon faction changed to Sith.
+    * Pirate faction changed to the Hutts.
+    * Hutts and Sith are extremely dangerous. Race fleets can combat them more effectively if you raise your threat level.
 2.	All vanilla ships removed from the game (except Xenon ships).
 3.	Most wares are now universally Star Wars based!
 4.	Main story changed to follow Star Wars lore. A large amount of artistic license was used. ;)
