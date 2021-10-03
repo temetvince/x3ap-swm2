@@ -1,3 +1,9 @@
+## 1.1.2
+* Add info for improving performance by disabling escort improvements in readme
+
+## 1.1.1
+* Fix indented bullet points in readme
+
 ## 1.1.0
 * Change: Make autorotate configurable
 * Convert Changelog to Markdown

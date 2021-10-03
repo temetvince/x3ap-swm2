@@ -29,6 +29,9 @@ Note: This mod does not include the SWLU soundtrack.
 3. Exploit the weaknesses of your enemies, holes in the economy, or the military advances of your allies.
 4. Exterminate factions which oppose you and the dreaded Omnicron Channel Virus.
 
+## Important
+* If you notice slowdowns, disable Improved Escort Behavior in 'x3 terran conflict/addon/t/9979-L044.xml'
+
 ## Installation
 Installation video: https://www.youtube.com/watch?v=c68t3CS4E-A&t=37s
 
