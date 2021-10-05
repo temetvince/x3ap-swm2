@@ -2,6 +2,9 @@
 
 Star Wars for Mayhem 2, a mod for X3: Albion Prelude. Farnham's Legacy is not supported. This mod requires Litcube's Universe and Mayhem 2, please see the install instructions.
 
+* The Github page: https://github.com/temetvince/x3ap-swm2
+* The ModDB page: https://www.moddb.com/mods/star-wars-mayhem-2
+
 Note: This mod does not include the SWLU soundtrack.
 
 ## Contents
