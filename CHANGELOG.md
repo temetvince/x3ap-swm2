@@ -1,3 +1,7 @@
+## 1.2.0
+* Update to latest version of Alaankwa autorotate/escort/map gates command
+* Fix bug in satellite monitoring menu
+
 ## 1.1.2
 * Add info for improving performance by disabling escort improvements in readme
 
