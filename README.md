@@ -1,9 +1,8 @@
-# Star Wars for Mayhem 2
+# Star Wars Mayhem 2
 
-Star Wars for Mayhem 2, a mod for X3: Albion Prelude. Farnham's Legacy is not supported. This mod requires Litcube's Universe and Mayhem 2, please see the install instructions.
+Star Wars Mayhem 2, a mod for X3: Albion Prelude. Farnham's Legacy is not supported. This mod requires Litcube's Universe!
 
-* The Github page: https://github.com/temetvince/x3ap-swm2
-* The ModDB page: https://www.moddb.com/mods/star-wars-mayhem-2
+* The Egosoft page: https://forum.egosoft.com/viewtopic.php?f=94&t=444004
 
 Note: This mod does not include the SWLU soundtrack.
 
@@ -32,25 +31,23 @@ Note: This mod does not include the SWLU soundtrack.
 3. Exploit the weaknesses of your enemies, holes in the economy, or the military advances of your allies.
 4. Exterminate factions which oppose you and the dreaded Omnicron Channel Virus.
 
-## Important
-* If you notice slowdowns, disable Improved Escort Behavior in 'x3 terran conflict/addon/t/9979-L044.xml'
-
 ## Installation
 Installation video: https://www.youtube.com/watch?v=c68t3CS4E-A&t=37s
 
-It is !!HIGHLY!! recommended, but not required, that you install the Claim and Tug Command for Joubarbe's Satellite Monitoring by Wynarel: Forum.https://forum.egosoft.com/viewtopic.php?t=398916
+### TL;DR
+1. Install Litcube's Universe
+2. Install Reshade (Optional)
+3. Copy SWM3 into your Litcube's Universe folder
 
-1. Install Mayhem 2. Follow ALL the instructions, including installing Litcube's Universe: (https://www.moddb.com/mods/mayhem/downloads/mayhem-main)
-    * IMPORTANT: When installing Mayhem Graphics, do not rename any of the optional cat/dat files yet!
+### Detailed Instructions Including Reshade
+1. Install X3AP, the no-steam exe from Egosoft, and Litcube's Universe
 2. If you don't want to use Reshade and want to skip the Graphics Improvement mod functionality, skip to step 7
 3. Download and install ReShade: https://reshade.me/
 4. When asked for the game, browse and select X3AP.exe in your x3 install folder
 5. The game uses Direct3D 9
 6. When asked, install all the shaders. Everything. All of them
-7. Copy the contents for SW Mayhem 2 from "x3 terran conflict" to your root Mayhem 2 install folder (probably named "x3 terran conflict"). It should ask you if you want to overwrite a bunch of files. Say yes!
-8. Rename the Mayhem 2 Graphics optional files you want to use to be the last cat/dat files. In other words, rename them to have the highest number of all the cat/dat files in the folder, one number higher than the current highest cat/dat file. I recommended using the dark milky way and particles no fog options. So for example, rename "OPTION - Dark Milky Way" cat and dat to "19.cat" and "19.dat" respectively, and then rename "OPTION - Particles No Fog" cat/dat to "20.cat" and "20.dat"
-9. If you want to use the optional font, then go to your game's 'x3 terran conflict' folder. Rename the folder 'RenameMeTof' to 'f'. Notice the LicenseAndCopyright file for your information. The original author's work can be found here: https://github.com/belluzj/fantasque-sans
-10. Enjoy!
+7. Copy the contents for SW Mayhem 2 from "x3 terran conflict" to your x3 install folder install folder (probably named "x3 terran conflict"). It should ask you if you want to overwrite a bunch of files. Say yes!
+8. If you want to disable the optional font, then go to your game's 'x3 terran conflict' folder. Delete the 'f' folder. Notice the LicenseAndCopyright file for your information. The original author's work can be found here: https://github.com/belluzj/fantasque-sans
 
 ## Graphics Improvement Mod
 * You can take before/after screenshots that save to your root install folder with the PrintScrn button on your keyboard. To access the options in game, press [SHIFT]+[~] (or [SHIFT]+[`])

@@ -1,3 +1,7 @@
+## 2.0
+* Star Wars Mayhem 2 now includes Mayhem 2
+* Updated Readme
+
 ## 1.3.1
 * News about where corporations are built is recorded in the Player Journal
 
