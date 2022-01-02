@@ -1,3 +1,14 @@
+## 1.3.1
+* News about where corporations are built is recorded in the Player Journal
+
+## 1.3.0
+* All ships now have Angular Acceleration set to 50.
+* Class rotation variables have been increased by these amounts:
+  * M1/M2/TL = 200%
+  * M7 = 50%
+  * M6 = 25%
+  * TM/TP/TS = 10%
+
 ## 1.2.0
 * Update to latest version of Alaankwa autorotate/escort/map gates command
 * Fix bug in satellite monitoring menu
