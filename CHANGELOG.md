@@ -1,4 +1,8 @@
-## 2.0
+## 2.0.2
+Fix problem with TShips file
+## 2.0.1
+* Update Version
+## 2.0.0
 * Star Wars Mayhem 2 now includes Mayhem 2
 * Updated Readme
 
