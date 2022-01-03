@@ -1,5 +1,10 @@
+## 2.0.3
+* Fix a problem with the TShips file
+* All ships have Angular Acceleration reset to their original values
+* Update autorotate and sector monitor
+
 ## 2.0.2
-Fix problem with TShips file
+* Fix a problem with the TShips file
 ## 2.0.1
 * Update Version
 ## 2.0.0
