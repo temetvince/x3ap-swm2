@@ -1,3 +1,6 @@
+## 2.0.4
+* Fix autorotate script not exiting properly on playership
+
 ## 2.0.3
 * Fix a problem with the TShips file
 * All ships have Angular Acceleration reset to their original values
