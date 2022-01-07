@@ -1,3 +1,6 @@
+## 2.0.5
+* Change autorotate monitor to not force correct playership on first run
+
 ## 2.0.4
 * Fix autorotate script not exiting properly on playership
 
