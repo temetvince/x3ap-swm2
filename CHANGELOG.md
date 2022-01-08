@@ -1,3 +1,6 @@
+## 2.0.6
+* Improve autorotate behavior
+
 ## 2.0.5
 * Change autorotate monitor to not force correct playership on first run
 * Improve autorotate behavior
