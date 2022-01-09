@@ -1,3 +1,6 @@
+## 2.0.7
+* Remove explosion effect when picking up satellite using command MapGates
+
 ## 2.0.6
 * Improve autorotate behavior
 
