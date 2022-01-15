@@ -32,12 +32,10 @@ Note: This mod does not include the SWLU soundtrack.
 4. Exterminate factions which oppose you and the dreaded Omnicron Channel Virus.
 
 ## Installation
-Installation video: https://www.youtube.com/watch?v=c68t3CS4E-A&t=37s
-
-### TL;DR
+### Overview
 1. Install Litcube's Universe
 2. Install Reshade (Optional)
-3. Copy SWM3 into your Litcube's Universe folder
+3. Copy Star Wars Mayhem 2 into your Litcube's Universe folder
 
 ### Detailed Instructions Including Reshade
 1. Install X3AP, the no-steam exe from Egosoft, and Litcube's Universe

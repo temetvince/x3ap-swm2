@@ -1,3 +1,11 @@
+## 2.0.8
+* Update Readme
+* Add faction list
+* Experimental Trans-Orbital Accelerators removed
+* Class rotation variables have been increased by these amounts:
+  * M3 = 40%
+  * M4 = 25%
+
 ## 2.0.7
 * Remove explosion effect when picking up satellite using command MapGates
 
