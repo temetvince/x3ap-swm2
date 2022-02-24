@@ -1,3 +1,7 @@
+## 2.1.0
+* Add 'Append' Option to Templates
+* Remove particles from 3d view
+
 ## 2.0.8
 * Update Readme
 * Add faction list
