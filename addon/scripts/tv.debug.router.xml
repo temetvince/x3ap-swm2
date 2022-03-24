@@ -2,12 +2,12 @@
 <?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
 <!-- Generated using X-Studio -->
 <script>
-	<name>temetvince.Debug.Router</name>
+	<name>tv.debug.router</name>
 	<version>1</version>
 	<engineversion>50</engineversion>
 	<description></description>
 	<arguments>
-		<argument index="1" name="debug" type="Parameter" desc="The parameter to output" />
+		<argument index="1" name="param.debug" type="Parameter" desc="The parameter to output" />
 	</arguments>
 	<sourcetext>
 		<line linenr="001" indent="">
@@ -17,7 +17,7 @@
 			<text> </text>
 			<text>datatype</text>
 			<text>[</text>
-			<var>$debug</var>
+			<var>$param.debug</var>
 			<text>]</text>
 			<text> </text>
 			<text>==</text>
@@ -36,12 +36,13 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>temetvince.Debug.Array</call>
+			<call>tv.debug.array</call>
+			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>debug</text>
+			<text>param.debug</text>
 			<text>=</text>
-			<var>$debug</var>
+			<var>$param.debug</var>
 		</line>
 		<line linenr="003" indent="&#160;">
 			<var>$result</var>
@@ -57,7 +58,6 @@
 			<text>+</text>
 			<text> </text>
 			<text>')'</text>
-			<text> </text>
 		</line>
 		<line linenr="004" indent="">
 			<text>else</text>
@@ -68,7 +68,7 @@
 			<text> </text>
 			<text>datatype</text>
 			<text>[</text>
-			<var>$debug</var>
+			<var>$param.debug</var>
 			<text>]</text>
 			<text> </text>
 			<text>==</text>
@@ -87,12 +87,13 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>temetvince.Debug.Table</call>
+			<call>tv.debug.table</call>
+			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>debug</text>
+			<text>param.debug</text>
 			<text>=</text>
-			<var>$debug</var>
+			<var>$param.debug</var>
 		</line>
 		<line linenr="006" indent="&#160;">
 			<var>$result</var>
@@ -124,12 +125,13 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>temetvince.Debug.String</call>
+			<call>tv.debug.string</call>
+			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>debug</text>
+			<text>param.debug</text>
 			<text>=</text>
-			<var>$debug</var>
+			<var>$param.debug</var>
 		</line>
 		<line linenr="009" indent="">
 			<text>end</text>
@@ -143,13 +145,13 @@
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
-			<sval type="string" val="temetvince.Debug.Router" />
+			<sval type="string" val="tv.debug.router" />
 			<sval type="int" val="50" />
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="2">
-				<sval type="string" val="debug" />
+				<sval type="string" val="param.debug" />
 				<sval type="string" val="result" />
 			</sval>
 			<sval type="array" size="10">
@@ -163,7 +165,7 @@
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="102" />
-					<sval type="string" val="temetvince.Debug.Array" />
+					<sval type="string" val="tv.debug.array" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
@@ -206,7 +208,7 @@
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="102" />
-					<sval type="string" val="temetvince.Debug.Table" />
+					<sval type="string" val="tv.debug.table" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
@@ -241,7 +243,7 @@
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="102" />
-					<sval type="string" val="temetvince.Debug.String" />
+					<sval type="string" val="tv.debug.string" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />

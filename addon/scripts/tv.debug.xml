@@ -2,35 +2,35 @@
 <?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
 <!-- Generated using X-Studio -->
 <script>
-	<name>temetvince.Debug</name>
+	<name>tv.debug</name>
 	<version>1</version>
 	<engineversion>50</engineversion>
 	<description></description>
 	<arguments>
-		<argument index="1" name="debug" type="Parameter" desc="The parameter to output" />
-		<argument index="2" name="trackingAim" type="Var/Ship/Station" desc="Optional. If provided, will only debug if trackingAim is the player's target" />
+		<argument index="1" name="param.debug" type="Parameter" desc="The parameter to output" />
+		<argument index="2" name="param.trackingaim" type="Var/Ship/Station" desc="Optional. If provided, will only debug if trackingAim is the player's target" />
 	</arguments>
 	<sourcetext>
 		<line linenr="001" indent="">
 			<comment>* This is the entry point for temetvince's debugging scripts.</comment>
 		</line>
 		<line linenr="002" indent="">
-			<comment>* You can call this script like this: $debug.return = [NULL] -&gt; call script 'temetvince.Debug': debug=$Unknown trackingAim=$ShipOrStation</comment>
+			<comment>* You can call this script like this: $debug.return = [NULL] -&gt; call script 'tv.debug': param.debug=$Unknown param.trackingaim=$ShipOrStation</comment>
 		</line>
 		<line linenr="003" indent="">
-			<comment>* $debug is the message or object to debug. Can be simple like a ship name or complex like an array of tables.</comment>
+			<comment>* $param.debug is the message or object to debug. Can be simple like a ship name or complex like an array of tables.</comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>* $trackingAim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game.</comment>
+			<comment>* $param.trackingaim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game.</comment>
 		</line>
 		<line linenr="005" indent="" />
 		<line linenr="006" indent="">
 			<text>if</text>
 			<text> </text>
-			<var>$trackingAim</var>
+			<var>$param.trackingaim</var>
 		</line>
 		<line linenr="007" indent="&#160;">
-			<var>$player.trackingAim</var>
+			<var>$player.trackingaim</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
@@ -48,11 +48,11 @@
 			<text> </text>
 			<text>if</text>
 			<text> </text>
-			<var>$trackingAim</var>
+			<var>$param.trackingaim</var>
 			<text> </text>
 			<text>!=</text>
 			<text> </text>
-			<var>$player.trackingAim</var>
+			<var>$player.trackingaim</var>
 		</line>
 		<line linenr="010" indent="&#160;&#160;">
 			<text>return</text>
@@ -75,57 +75,80 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>temetvince.Debug.Router</call>
+			<call>tv.debug.router</call>
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>debug</text>
+			<text>param.debug</text>
 			<text>=</text>
-			<var>$debug</var>
+			<var>$param.debug</var>
 		</line>
 		<line linenr="014" indent="" />
-		<line linenr="015" indent="" interruptable="@">
-			<var>$return</var>
+		<line linenr="015" indent="">
+			<text>write</text>
 			<text> </text>
-			<text>=</text>
+			<text>to</text>
 			<text> </text>
-			<var>[THIS]</var>
-			<text>-&gt;</text>
+			<text>player</text>
 			<text> </text>
-			<text>call</text>
+			<text>logbook</text>
 			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<call>temetvince.Debug.Output</call>
-			<text> </text>
-			<text>:</text>
-			<text> </text>
-			<text>debug</text>
-			<text>=</text>
 			<var>$result</var>
 		</line>
-		<line linenr="016" indent="" />
-		<line linenr="017" indent="">
+		<line linenr="016" indent="">
+			<text>display</text>
+			<text> </text>
+			<text>info</text>
+			<text> </text>
+			<text>box</text>
+			<text>:</text>
+			<text> </text>
+			<text>text</text>
+			<text>=</text>
+			<text> </text>
+			<var>$result</var>
+			<text>,</text>
+			<text> </text>
+			<text>icon</text>
+			<text>=</text>
+			<text> </text>
+			<var>57</var>
+			<text>,</text>
+			<text> </text>
+			<text>timeout</text>
+			<text>=</text>
+			<text> </text>
+			<var>10000</var>
+			<text>,</text>
+			<text> </text>
+			<text>fadeout</text>
+			<text>=</text>
+			<text> </text>
+			<var>1000</var>
+		</line>
+		<line linenr="017" indent="" />
+		<line linenr="018" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$return</var>
 		</line>
+		<line linenr="019" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
-			<sval type="string" val="temetvince.Debug" />
+			<sval type="string" val="tv.debug" />
 			<sval type="int" val="50" />
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="5">
-				<sval type="string" val="debug" />
-				<sval type="string" val="trackingAim" />
-				<sval type="string" val="player.trackingAim" />
+				<sval type="string" val="param.debug" />
+				<sval type="string" val="param.trackingaim" />
+				<sval type="string" val="player.trackingaim" />
 				<sval type="string" val="result" />
 				<sval type="string" val="return" />
 			</sval>
-			<sval type="array" size="7">
+			<sval type="array" size="8">
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
 					<sval type="int" val="-1610611709" />
@@ -161,7 +184,7 @@
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="102" />
-					<sval type="string" val="temetvince.Debug.Router" />
+					<sval type="string" val="tv.debug.router" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
@@ -169,15 +192,21 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
 				</sval>
-				<sval type="array" size="8">
-					<sval type="int" val="102" />
-					<sval type="string" val="temetvince.Debug.Output" />
-					<sval type="int" val="4" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="1" />
+				<sval type="array" size="3">
+					<sval type="int" val="400" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="9">
+					<sval type="int" val="1861" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="57" />
+					<sval type="int" val="4" />
+					<sval type="int" val="10000" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1000" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
@@ -195,7 +224,7 @@
 					<sval type="string" val="Optional. If provided, will only debug if trackingAim is the player's target" />
 				</sval>
 			</sval>
-			<sval type="array" size="10">
+			<sval type="array" size="11">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -204,17 +233,17 @@
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="You can call this script like this: $debug.return = [NULL] -&gt; call script 'temetvince.Debug': debug=$Unknown trackingAim=$ShipOrStation" />
+					<sval type="string" val="You can call this script like this: $debug.return = [NULL] -&gt; call script 'tv.debug': param.debug=$Unknown param.trackingaim=$ShipOrStation" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="$debug is the message or object to debug. Can be simple like a ship name or complex like an array of tables." />
+					<sval type="string" val="$param.debug is the message or object to debug. Can be simple like a ship name or complex like an array of tables." />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="$trackingAim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game." />
+					<sval type="string" val="$param.trackingaim is optional. If provided, then the debug script will only run if that entity is the player's tracking aim in game." />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="0" />
@@ -237,7 +266,11 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="6" />
+					<sval type="int" val="7" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="8" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>

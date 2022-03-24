@@ -1,3 +1,11 @@
+## 2.2.0
+* Fix autorotate bug
+* Fix escort bugs
+* Change Save Hotkey:
+    * No longer requires Salvage Insurance
+    * Does not ask user if they wish to save
+    * Does not make warning noise when wrapping from save 10 to save 1
+
 ## 2.1.0
 * Add 'Append' Option to Templates
 * Remove particles from 3d view

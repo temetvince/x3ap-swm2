@@ -2,12 +2,12 @@
 <?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
 <!-- Generated using X-Studio -->
 <script>
-	<name>temetvince.Debug.Table</name>
+	<name>tv.debug.table</name>
 	<version>1</version>
 	<engineversion>50</engineversion>
 	<description></description>
 	<arguments>
-		<argument index="1" name="debug" type="Parameter" desc="The table to output" />
+		<argument index="1" name="param.debug" type="Parameter" desc="The table to output" />
 	</arguments>
 	<sourcetext>
 		<line linenr="001" indent="">
@@ -19,7 +19,7 @@
 			<text> </text>
 			<text>clone</text>
 			<text> </text>
-			<var>$debug</var>
+			<var>$param.debug</var>
 		</line>
 		<line linenr="002" indent="" />
 		<line linenr="003" indent="">
@@ -122,10 +122,11 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>temetvince.Debug.Router</call>
+			<call>tv.debug.router</call>
+			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>debug</text>
+			<text>param.debug</text>
 			<text>=</text>
 			<var>$value</var>
 		</line>
@@ -166,16 +167,17 @@
 			<text> </text>
 			<var>$return</var>
 		</line>
+		<line linenr="020" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
-			<sval type="string" val="temetvince.Debug.Table" />
+			<sval type="string" val="tv.debug.table" />
 			<sval type="int" val="50" />
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="8">
-				<sval type="string" val="debug" />
+				<sval type="string" val="param.debug" />
 				<sval type="string" val="table" />
 				<sval type="string" val="table.keys" />
 				<sval type="string" val="return" />
@@ -249,7 +251,7 @@
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="102" />
-					<sval type="string" val="temetvince.Debug.Router" />
+					<sval type="string" val="tv.debug.router" />
 					<sval type="int" val="7" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
@@ -312,7 +314,7 @@
 					<sval type="string" val="The table to output" />
 				</sval>
 			</sval>
-			<sval type="array" size="7">
+			<sval type="array" size="8">
 				<sval type="array" size="2">
 					<sval type="int" val="1" />
 					<sval type="int" val="2" />
@@ -339,6 +341,10 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="12" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="13" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
