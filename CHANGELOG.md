@@ -1,3 +1,6 @@
+## 2.2.1
+* Fix escort bug for playership
+
 ## 2.2.0
 * Fix autorotate bug
 * Fix escort bugs
