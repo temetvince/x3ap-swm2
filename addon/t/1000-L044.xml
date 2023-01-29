@@ -44,8 +44,8 @@
 		<t id="38">1</t> <!-- Food display after Sanctuaries names, 0 to deactivate. Also affect Research station info display. (default: 1) -->
 		<t id="39">2</t> <!-- Recycle factor ; bound to ship/laser/missile/shield resources cost divider (default: 2) -->
 		<t id="41">10</t> <!-- Mayhem scanner maximum shield, in percent (default: 7) -->
-		<t id="48">200</t> <!-- Minimum fighters per Battle Group carriers (default: 10) -->
-		<t id="481">200</t> <!-- Maximum fighters per Battle Group carriers (default: 20) -->
+		<t id="48">10</t> <!-- Minimum fighters per Battle Group carriers (default: 10) -->
+		<t id="481">20</t> <!-- Maximum fighters per Battle Group carriers (default: 20) -->
 		<t id="49">120</t> <!-- Breakthrough research amount (default: 60) -->
 		<t id="51">5</t> <!-- Company wares salvagers; per company! (default: 4) -->
 		<t id="52">3</t> <!-- Company ships salvagers; per company! (default: 2) -->

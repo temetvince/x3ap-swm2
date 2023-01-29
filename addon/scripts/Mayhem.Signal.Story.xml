@@ -702,12 +702,12 @@
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="078" indent="&#160;&#160;">
+		<line linenr="078" indent="&#160;&#160;&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="079" indent="&#160;&#160;">
+		<line linenr="079" indent="&#160;&#160;&#160;">
 			<var>$race</var>
 			<text> </text>
 			<text>=</text>
@@ -717,7 +717,7 @@
 			<var>$XS.Iterator1</var>
 			<text>]</text>
 		</line>
-		<line linenr="080" indent="&#160;">
+		<line linenr="080" indent="&#160;&#160;&#160;">
 			<var>$XS.Iterator2</var>
 			<text> </text>
 			<text>=</text>
@@ -730,17 +730,17 @@
 			<text> </text>
 			<var>$allRaces</var>
 		</line>
-		<line linenr="081" indent="">
+		<line linenr="081" indent="&#160;&#160;&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator2</var>
 		</line>
-		<line linenr="082" indent="">
+		<line linenr="082" indent="&#160;&#160;&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator2</var>
 		</line>
-		<line linenr="083" indent="">
+		<line linenr="083" indent="&#160;&#160;&#160;">
 			<var>$subrace</var>
 			<text> </text>
 			<text>=</text>
@@ -750,7 +750,7 @@
 			<var>$XS.Iterator2</var>
 			<text>]</text>
 		</line>
-		<line linenr="084" indent="">
+		<line linenr="084" indent="&#160;&#160;&#160;">
 			<text>if</text>
 			<text> </text>
 			<var>$subrace</var>
@@ -759,7 +759,7 @@
 			<text> </text>
 			<var>$race</var>
 		</line>
-		<line linenr="085" indent="" interruptable="@">
+		<line linenr="085" indent="&#160;&#160;&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[NULL]</var>
@@ -785,7 +785,7 @@
 			<text>=</text>
 			<var>[Neutral]</var>
 		</line>
-		<line linenr="086" indent="" interruptable="@">
+		<line linenr="086" indent="&#160;&#160;&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[NULL]</var>
@@ -811,13 +811,13 @@
 			<text>=</text>
 			<var>[Friend]</var>
 		</line>
-		<line linenr="087" indent="">
+		<line linenr="087" indent="&#160;&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="088" indent="">
+		<line linenr="088" indent="&#160;&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="089" indent="">
+		<line linenr="089" indent="&#160;">
 			<text>end</text>
 		</line>
 		<line linenr="090" indent="" interruptable="@">
@@ -927,19 +927,171 @@
 			<text>=</text>
 			<text>'Mayhem_SignalStory'</text>
 		</line>
-		<line linenr="097" indent="">
-			<text>end</text>
+		<line linenr="097" indent="" />
+		<line linenr="098" indent="">
+			<comment>* temetvince</comment>
 		</line>
-		<line linenr="098" indent="" />
 		<line linenr="099" indent="">
+			<var>$ship</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>create</text>
+			<text> </text>
+			<text>ship</text>
+			<text>:</text>
+			<text> </text>
+			<text>type</text>
+			<text>=</text>
+			<var>{Rebel T-Wing Miner}</var>
+			<text> </text>
+			<text>owner</text>
+			<text>=</text>
+			<var>[Neutral Race]</var>
+			<text> </text>
+			<text>addto</text>
+			<text>=</text>
+			<var>[Bluish Snout]</var>
+			<text> </text>
+			<text>x</text>
+			<text>=</text>
+			<var>0</var>
+			<text> </text>
+			<text>y</text>
+			<text>=</text>
+			<var>0</var>
+			<text> </text>
+			<text>z</text>
+			<text>=</text>
+			<var>0</var>
+		</line>
+		<line linenr="100" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>$ship</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.AddDefaultEquipment</call>
+			<text> </text>
+			<text>:</text>
+		</line>
+		<line linenr="101" indent="">
+			<var>$ship</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>add</text>
+			<text> </text>
+			<text>lasers</text>
+			<text> </text>
+			<text>per</text>
+			<text> </text>
+			<text>value</text>
+			<text>:</text>
+			<var>100</var>
+			<text> </text>
+			<text>flags</text>
+			<text>:</text>
+			<var>0</var>
+		</line>
+		<line linenr="102" indent="">
+			<var>$ship</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>add</text>
+			<text> </text>
+			<text>shields</text>
+			<text> </text>
+			<text>per</text>
+			<text> </text>
+			<text>value</text>
+			<text>:</text>
+			<var>100</var>
+		</line>
+		<line linenr="103" indent="" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>$ship</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.SetTurrets</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>ship</text>
+			<text>=</text>
+			<var>$ship</var>
+			<text> </text>
+			<text>defense</text>
+			<text>=</text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="104" indent="">
+			<comment>* $ship-&gt; set local variable: name='mayhem_firstTS' value=[TRUE]</comment>
+		</line>
+		<line linenr="105" indent="">
+			<var>$ship</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>begin</text>
+			<text> </text>
+			<text>task</text>
+			<text> </text>
+			<var>2044</var>
+			<text> </text>
+			<text>with</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.Task.Claimeable</call>
+			<text> </text>
+			<text>and</text>
+			<text> </text>
+			<text>priority</text>
+			<text> </text>
+			<var>0</var>
+			<text>:</text>
+			<text> </text>
+			<text>arg1</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>arg2</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>arg3</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>arg4</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>arg5</text>
+			<text>=</text>
+			<var>null</var>
+		</line>
+		<line linenr="106" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="100" indent="">
+		<line linenr="107" indent="" />
+		<line linenr="108" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="101" indent="" />
-		<line linenr="102" indent="" />
-		<line linenr="103" indent="">
+		<line linenr="109" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="110" indent="" />
+		<line linenr="111" indent="" />
+		<line linenr="112" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -952,7 +1104,7 @@
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="2" />
-			<sval type="array" size="16">
+			<sval type="array" size="17">
 				<sval type="string" val="sector" />
 				<sval type="string" val="nojumpdrive" />
 				<sval type="string" val="status" />
@@ -969,8 +1121,9 @@
 				<sval type="string" val="XS.Iterator1" />
 				<sval type="string" val="subrace" />
 				<sval type="string" val="XS.Iterator2" />
+				<sval type="string" val="ship" />
 			</sval>
-			<sval type="array" size="78">
+			<sval type="array" size="84">
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
 					<sval type="int" val="-1610612216" />
@@ -1262,7 +1415,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610593015" />
+					<sval type="int" val="-1610591479" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="10" />
@@ -1283,7 +1436,7 @@
 				</sval>
 				<sval type="array" size="25">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610593277" />
+					<sval type="int" val="-1610591741" />
 					<sval type="int" val="7" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
@@ -1637,7 +1790,7 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610593277" />
+					<sval type="int" val="-1610591741" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="2" />
@@ -1669,6 +1822,78 @@
 					<sval type="int" val="5" />
 					<sval type="string" val="Mayhem_SignalStory" />
 				</sval>
+				<sval type="array" size="14">
+					<sval type="int" val="739" />
+					<sval type="int" val="16" />
+					<sval type="int" val="9" />
+					<sval type="int" val="459395" />
+					<sval type="int" val="10" />
+					<sval type="int" val="12" />
+					<sval type="int" val="65544" />
+					<sval type="int" val="1179650" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="Mayhem.AddDefaultEquipment" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="16" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1196" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="16" />
+					<sval type="int" val="4" />
+					<sval type="int" val="100" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1197" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="16" />
+					<sval type="int" val="4" />
+					<sval type="int" val="100" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="102" />
+					<sval type="string" val="Mayhem.SetTurrets" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="16" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="16" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="18">
+					<sval type="int" val="1017" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="16" />
+					<sval type="string" val="Mayhem.Task.Claimeable" />
+					<sval type="int" val="4" />
+					<sval type="int" val="2044" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
 					<sval type="int" val="33" />
@@ -1685,7 +1910,7 @@
 					<sval type="string" val="" />
 				</sval>
 			</sval>
-			<sval type="array" size="31">
+			<sval type="array" size="34">
 				<sval type="array" size="2">
 					<sval type="int" val="2" />
 					<sval type="int" val="2" />
@@ -1789,26 +2014,40 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="76" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="76" />
+					<sval type="int" val="1" />
+					<sval type="string" val="temetvince" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="81" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$ship-&gt; set local variable: name='mayhem_firstTS' value=[TRUE]" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="82" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="76" />
+					<sval type="int" val="82" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="76" />
+					<sval type="int" val="82" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="77" />
+					<sval type="int" val="83" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="77" />
+					<sval type="int" val="83" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="77" />
+					<sval type="int" val="83" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
