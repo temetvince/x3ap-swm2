@@ -10,21 +10,12 @@
 		<argument index="1" name="sector" type="Var/Sector" desc="The sector to monitor" />
 	</arguments>
 	<sourcetext>
-		<line linenr="001" indent="" interruptable="@">
+		<line linenr="001" indent="">
 			<var>$task</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>[THIS]</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>call</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<call>tv.get.task.monitor.sector</call>
-			<text> </text>
-			<text>:</text>
+			<var>12000</var>
 		</line>
 		<line linenr="002" indent="" />
 		<line linenr="003" indent="">
@@ -90,13 +81,14 @@
 				<sval type="string" val="task" />
 			</sval>
 			<sval type="array" size="3">
-				<sval type="array" size="6">
-					<sval type="int" val="102" />
-					<sval type="string" val="tv.get.task.monitor.sector" />
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
 					<sval type="int" val="1" />
-					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
-					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="12000" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="18">
 					<sval type="int" val="1017" />

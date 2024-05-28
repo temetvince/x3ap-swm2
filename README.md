@@ -23,7 +23,7 @@ Note: This mod does not include the SWLU soundtrack.
 ## Special Links
 * Why play Mayhem 2 over vanilla x3? Answered by Darth Fiscus: https://www.youtube.com/watch?t=388&v=TcShZdL19No&feature=youtu.be
 * FANTASTIC tutorial series: https://www.youtube.com/watch?v=md2Nb-jqwuo&list=PL4c4Ymq37GHSJ4aUG86mgIir_marXo4RQ
-* Litcube's wiki: http://litcube.xtimelines.net/wiki/index.php/Main_Page
+* Litcube's wiki: https://www.x3collective.com/lu/litcubes-universe-features
 
 ## Gameplay
 1. Explore the galaxy you are thrust in either yourself or with explorer ships.
@@ -43,16 +43,12 @@ Note: This mod does not include the SWLU soundtrack.
 3. Download and install ReShade: https://reshade.me/
 4. When asked for the game, browse and select X3AP.exe in your x3 install folder
 5. The game uses Direct3D 9
-6. When asked, install all the shaders. Everything. All of them
+6. When asked, select 'temetvince.ini' as the preset from which to install shaders
 7. Copy the contents for SW Mayhem 2 from "x3 terran conflict" to your x3 install folder install folder (probably named "x3 terran conflict"). It should ask you if you want to overwrite a bunch of files. Say yes!
-8. If you want to disable the optional font, then go to your game's 'x3 terran conflict' folder. Delete the 'f' folder. Notice the LicenseAndCopyright file for your information. The original author's work can be found here: https://github.com/belluzj/fantasque-sans
-
-## Graphics Improvement Mod
-* You can take before/after screenshots that save to your root install folder with the PrintScrn button on your keyboard. To access the options in game, press [SHIFT]+[~] (or [SHIFT]+[`])
+8. If you want to enable the optional font, then go to your game's 'x3 terran conflict' folder. Rename the 'RENAME_ME_TO_f' folder to simply 'f'. Notice the LicenseAndCopyright file for your information. The original author's work can be found here: https://github.com/belluzj/fantasque-sans
 
 ## Settings
 * Difficulty (starting threat level) and many other settings can be set in addon/t/1000-L044.xml.
-* Some other settings can be changed in the '9979-L044.xml' file located in the 'x3 terran conflict/addon/t/' directory
 
 ## Development Features
 * Debug scripts for development. It can take in any text decodable object, say an array of tables, and output it in game to the user
@@ -76,8 +72,8 @@ Note: This mod does not include the SWLU soundtrack.
 3.	Most wares are now universally Star Wars based!
 4.	Main story changed to follow Star Wars lore. A large amount of artistic license was used. ;)
 5.	Faction capital ships can be renamed in the addon/t/9978_L044.xml file. Name them after your friends or favorite characters!
-6. New game starts. Optionally join the Rebellion or Fight for the Empire.
-7.	Many Mayhem 2 balance changes.
+6.  New game starts. Optionally join the Rebellion or Fight for the Empire.
+7.	Longer range, staggered fire turrets.
 8.	Difficulty (starting threat level) and many other settings can be set in addon/t/1000-L044.xml.
 9.	Revamped escort behavior - Escorts should look good now instead of flying around like crazy. Can be turned off in addon/t/9979-L044.xml.
 10.	Default ship equipment overhauled. Many now come with Quantum Jump Gate Extensions, Transporter Devices, Docking Transporter Extensions, and Triplex Scanners, to name a few.
