@@ -163,7 +163,7 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$none</var>
+			<var>$empire</var>
 		</line>
 		<line linenr="020" indent="&#160;">
 			<text>set</text>
@@ -408,7 +408,7 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="3" />
+					<sval type="int" val="2" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>

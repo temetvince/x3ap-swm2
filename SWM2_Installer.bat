@@ -4,15 +4,15 @@ echo Installing Star Wars Mayhem II - The ultimate Litcube's Universe experience
 
 :: Delete necessary vanilla files
 del /Q .\soundtrack\*.*
+del /Q .\loadscr\*.*
 del /Q .\addon\loadscr\*.*
 del /Q .\addon\director\*.*
 del /Q .\addon\types\*.*
 del /Q .\addon\scripts\*.*
 
-:: Install the mod files
+:: Install LU & Mayhem 2
 xcopy /E /Y .\Install_Files_LU\* .\*
 xcopy /E /Y .\Install_Files_M2\* .\*
-xcopy /E /Y .\Install_Files_SWM2_Base\* .\*
 
 :: Install the Mayhem 2 graphics options (Note: 12, 13, & 14 cat/dats were just empty placeholders)
 copy /Y .\Install_Files_M2_Graphics\addon\"OPTION - Dark Milky Way".* .\addon\12.*
@@ -20,6 +20,10 @@ copy /Y .\Install_Files_M2_Graphics\addon\"OPTION - No Particles No Fog".* .\add
 ::copy /Y .\Install_Files_M2_Graphics\addon\"OPTION - Particles No Fog".* .\addon\13.*
 ::copy /Y .\Install_Files_M2_Graphics\addon\"OPTION - Particles Fog".* .\addon\13.*
 ::copy /Y .\Install_Files_M2_Graphics\addon\"OPTION - No Trails".* .\addon\14.*
+
+:: Remove any recently installed loadscreens & install SWM2 Base
+del /Q .\addon\loadscr\*.*
+xcopy /E /Y .\Install_Files_SWM2_Base\* .\*
 
 :: Update Star Wars Mayhem 2
 echo .
