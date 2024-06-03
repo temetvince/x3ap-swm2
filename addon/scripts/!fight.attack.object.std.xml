@@ -872,11 +872,11 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>target</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>$victim</var>
 			<text> </text>
-			<text>MINDIST</text>
+			<text>argument2</text>
 			<text>=</text>
 			<var>null</var>
 		</line>
@@ -1679,11 +1679,11 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>targetsector</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>$sector</var>
 			<text> </text>
-			<text>destination</text>
+			<text>argument2</text>
 			<text>=</text>
 			<var>$victim</var>
 		</line>
@@ -1891,11 +1891,11 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>Target</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>$victim</var>
 			<text> </text>
-			<text>set.timediff</text>
+			<text>argument2</text>
 			<text>=</text>
 			<var>[TRUE]</var>
 		</line>
@@ -2002,7 +2002,7 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>victim</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>$victim</var>
 		</line>
