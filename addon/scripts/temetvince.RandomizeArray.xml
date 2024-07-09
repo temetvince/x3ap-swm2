@@ -127,7 +127,7 @@
 		<line linenr="021" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
-			<var>$size</var>
+			<var>$i</var>
 		</line>
 		<line linenr="022" indent="&#160;">
 			<var>$i</var>
@@ -290,7 +290,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="143" />
-					<sval type="int" val="1" />
+					<sval type="int" val="5" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
